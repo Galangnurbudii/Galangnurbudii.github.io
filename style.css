@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    font-family: "Ubuntu", sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 112px;
+    background-color: #13151E;
+    padding: 0 112px;
+}   
+
+.navbar ul {
+    width: 40em;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.navbar ul li{
+    transition: 0.5s;
+}
+
+.navbar ul li:nth-child(5){
+    padding : 10px;
+    border-radius: 10px;
+    background-color: #D6222D;
+}
+
+.navbar ul li:hover{
+    transform: scale(1.25);
+    transition: 0.5s;
+}
+
+.landing-page{
+    position: relative;
+    background-color: #13151E;
+    display: flex;
+    justify-content: space-evenly;
+    height: 695px;
+}
+
+.hiasan-bawah{
+    position: absolute;
+    transform: translateY(4px);
+    left: 0;
+    bottom: 0;
+}
+
+.hiasan-kanan{
+    position: absolute;
+    right: 0;
+}
+
+.left h1{
+    font-weight: 700;
+    font-size: 72px;
+    color: #D6222D;
+    
+}
+
+.left h1:nth-child(2){
+    color: white;
+}
+
+.container{
+    padding: 0 112px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left{
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    /* justify-content: space-between; */
+}
+
+.left a{
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    padding: 10px 20px;
+    margin: auto;
+    border: #D6222D solid 3px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.left a:hover{
+    border: none;
+    background-color: #D6222D;
+    font-size: 1.1em;
+    padding: 1.1em 1.1em;
+    transition: 0.5s;
+}
+
+.right{
+    transform:  translateX(-10px);
+    display: flex;
+    height: 260px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.right div{
+    margin: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+.kanji-break{
+    height: 160px;
+    background-color: #D6222D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-food{
+    height: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.our-food .video video{
+    height: 360px;
+}
+
+.our-food .description{
+    width: 40%;
+}
+
+.our-food .description .judul{
+    display: flex;
+}
+
+.our-food .description .judul h1{
+    margin: 5px;
+}
+
+.our-food .description .judul h1:nth-child(1),.our-food .description .judul h1:nth-child(4){
+    color: #D6222D;
+}
+
+.food{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 115px;
+    height: 1024px;
+    background-color: #13151E;
+}
+
+.food .hiasan-bg img:nth-child(1){
+    position: absolute;
+    right: 165px;
+    top: 40px;
+}
+
+.food .hiasan-bg img:nth-child(2){
+    position: absolute;
+    left: 250px;
+    bottom: 50px;
+}
+
+.food .hiasan-bg img:nth-child(3){
+    position: absolute;
+    right: 200px;
+    bottom: 90px;
+}
+
+.food .content{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.food .content .text{
+    width: 50%;
+    position: relative;
+    /* padding: 0 115px; */
+}
+
+.food .content .text .title{
+    display: flex;
+}
+
+.food .content .text .title h1{
+    font-size: 38px;
+    margin: 0 5px;
+}
+
+.food .content .text .title h1:nth-child(1){
+    color: white;
+}
+
+.food .content .text .title h1:nth-child(2){
+    color: #D6222D;
+}
+
+.food .content .text .paragraph{
+    color: white;
+    line-height: 1.5em;
+}
+
+.food .content .text .see-more{
+    position: absolute;
+    right: 0;
+}
+
+.food .content .text .see-more a{
+    border: #D6222D solid 3px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.food .content .text .see-more a:hover{
+    /* border: none; */
+    font-size: 1.1em;
+    background-color: #D6222D;
+    transition: 0.5s;
+}
