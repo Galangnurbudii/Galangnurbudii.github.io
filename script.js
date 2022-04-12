@@ -11,3 +11,8 @@ function printScroll(){
 }
 
 window.addEventListener('scroll',printScroll,false)
+
+const backToTop = document.getElementById("backToTop")
+backToTop.addEventListener('click',function(){
+    window.scrollTo(0,0)
+})

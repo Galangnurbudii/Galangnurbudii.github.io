@@ -1,0 +1,38 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 112px;
+    background-color: #13151E;
+    padding: 0 112px;
+}
+
+.navbar ul {
+    width: 40em;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    
+}
+
+.navbar ul .tab{
+    transition: 0.5s;
+}
+
+.navbar ul .tab:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1180px){
+    .navbar ul{
+        width: 30em;
+    }
+}

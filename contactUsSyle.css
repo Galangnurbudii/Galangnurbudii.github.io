@@ -1,0 +1,135 @@
+@import url("initialization.css");
+@import url("navbar.css");
+@import url("footer.css");
+
+.navbar ul  li:nth-child(4){
+    border-bottom: white 2px solid;
+}
+
+.get-in-touch{
+    padding: 0 112px;
+    height: 860px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #13151E;
+}
+
+
+
+.get-in-touch h1{
+    font-size: 37.5px;  
+    color: white;
+}
+
+.get-in-touch h1::after{
+    color: #D6222D;
+    content: " Touch";
+}
+
+.get-in-touch p{
+    max-width: 70%;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.45em;
+}
+
+.get-in-touch .contact{
+    display: flex;
+    align-items: center;
+    font-size: 22.5px;
+    color: white;
+}
+
+.get-in-touch .contact img{
+    margin: 0 35px 0 0;
+}
+
+.send-us-message{
+    height: 830px;
+    position: relative;
+    background-color: #13151E;
+    display: flex;
+    padding:  75px 112px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.send-us-message hr{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #D6222D;
+    border-color: #D6222D;
+}
+
+.send-us-message .left{
+    width: 45%;
+    position: relative;
+}
+
+.send-us-message .left img:nth-child(2){
+    position: absolute;
+    right: 0;
+}
+
+.send-us-message .right{
+    width: 50%;
+}
+
+.send-us-message .right h1{
+    color: white;
+    font-weight: 500;
+    font-size: 37.5px;
+}
+
+.send-us-message .right h1::after{
+    color: #D6222D;
+    content: " Message";
+}
+
+input{
+    width: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+    border: solid #D6C2BF 4px;
+    height: 60px;
+    padding: 16px;
+    color: #D6C2BF;
+}
+
+::placeholder{
+    color: #D6C2BF;
+    opacity: 80%;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+label{
+    color: #D6C2BF;
+
+}
+
+.send-us-message .right{
+    position: relative;
+}
+
+.send-us-message .right div{
+    color: #D6C2BF;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.send-us-message .right button{
+    position: absolute;
+    right: 0;
+    font-family: 'Ubuntu',sans-serif;
+    color: white;
+    background-color: #13151E;
+    transition: 0.5s;
+}
+
+.send-us-message .right button:hover{
+    background-color: #D6222D;
+}

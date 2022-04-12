@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+img{
+    height: auto;
+}
+
+body{
+    width: 100%;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.button{
+    color: #13151E;
+    border: #D6222D solid 3px;
+    border-radius: 10px;
+    height: 43px;
+    width: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.button:hover{
+    /* border: none; */
+    font-size: 1.1em;
+    background-color: #D6222D;
+    transition: 0.5s;
+}
