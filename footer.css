@@ -1,81 +1,84 @@
-footer{
-    height: 375px;
-    background-color: #13151E;
-    position: relative;
+footer {
+	height: 375px;
+	background-color: #13151e;
+	position: relative;
 }
 
-footer hr{
-    border: #D6222D solid 1px;
-    background-color: #D6222D;
+footer hr {
+	border: #d6222d solid 1px;
+	background-color: #d6222d;
 }
 
-footer .wrapper{
-    padding: 75px 112px 0 112px;
-    display: flex;
-    justify-content: space-between;
+footer .wrapper {
+	padding: 75px 112px 0 112px;
+	display: flex;
+	justify-content: space-between;
 }
 
-footer .wrapper .content{
-    max-width: 30%;
+footer .wrapper .content {
+	max-width: 30%;
 }
 
-footer .wrapper .content h2{
-    color: #fff;
+footer .wrapper .content h2 {
+	color: #fff;
 }
 
-footer .wrapper .content a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 300;
-    transition: 0.5s;
+footer .wrapper .content a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 300;
+	transition: 0.5s;
 }
 
-footer .wrapper .content a:hover{
-    border-bottom: solid white 1px;
-    transition: 0.5s;
+footer .wrapper .content a:hover {
+	border-bottom: solid white 1px;
+	transition: 0.5s;
 }
 
-footer .wrapper .content p{
-    color: #fff;
-    font-size: 16px;
-    font-weight: 300;
+footer .wrapper .content p {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 300;
 }
 
-.back-to-top{
-    position: absolute;
-    top: 200px;
-    right: 25px;
-    display: flex;
-    align-items: center;
+.back-to-top {
+	position: absolute;
+	top: 200px;
+	right: 25px;
+	display: flex;
+	align-items: center;
 }
 
-.back-to-top button{
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    transition: 0.5s;
+.back-to-top button {
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+	transition: 0.5s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.back-to-top button:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: 0.5s;
+.back-to-top button:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	transition: 0.5s;
 }
 
-footer .logo-sosmed{
-    padding: 0 112px;
-    display: flex;
-    justify-content: space-between;
+footer .logo-sosmed {
+	padding: 0 112px;
+	display: flex;
+	justify-content: space-between;
 }
 
-footer .logo-sosmed .sosmed{
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+footer .logo-sosmed .sosmed {
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
-footer .logo-sosmed .sosmed .icon img{
-    margin: 5px;
+footer .logo-sosmed .sosmed .icon img {
+	margin: 5px;
 }
