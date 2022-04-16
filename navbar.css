@@ -7,8 +7,12 @@ header {
 	padding: 0 112px;
 }
 
+body{
+	overflow-x: hidden;
+}
+
 .navbar ul {
-	width: 40em;
+	width: 640px;
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
@@ -18,7 +22,6 @@ header {
 .navbar ul li a {
 	text-decoration: none;
 	color: white;
-	font-size: 18px;
 }
 
 .navbar ul .tab {
@@ -30,8 +33,81 @@ header {
 	transition: 0.5s;
 }
 
+.burger-wrap {
+	right: 0;
+	display: none;
+	z-index: 3;
+}
+
+.burger-wrap div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 40px;
+	width: 50px;
+}
+
+.burger-wrap div div {
+	height: 5px;
+	border-radius: 3px;
+	width: 50px;
+	background-color: white;
+	transition: 1s;
+}
+
+.burger-wrap .active div {
+	transition: 1s;
+}
+
+.burger-wrap .active div:first-child {
+	transform: translateY(17.5px) rotate(45deg);
+}
+
+.burger-wrap .active div:nth-child(2) {
+	opacity: 0;
+	transform: scale(0);
+}
+
+.burger-wrap .active div:last-child {
+	transform: translateY(-17.5px) rotate(-45deg);
+}
+
 @media screen and (max-width: 1180px) {
 	.navbar ul {
-		width: 30em;
+		width: 540px;
+	}
+}
+
+@media screen and (max-width: 940px) {
+	header{
+		padding: 0 80px;
+	}
+	.navbar ul {
+		position: absolute;
+		right: 0;
+		top: 0;
+		flex-direction: column;
+		height: 100vh;
+		width: 100%;
+		align-items: center;
+		justify-content: space-evenly;
+		background-color: #13151e;
+		z-index: 2;
+		transform: translateX(100%);
+		transition: 1s;
+		transition-timing-function: ease-in-out;
+	}
+	
+	.navbar ul.slide{
+		transform: translateX(0);
+	}
+	.burger-wrap {
+		display: flex;
+	}
+}
+
+@media screen and (max-width: 764px) {
+	header{
+		padding: 0 40px;
 	}
 }

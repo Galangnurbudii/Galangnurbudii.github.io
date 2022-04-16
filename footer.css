@@ -1,5 +1,5 @@
 footer {
-	height: 375px;
+	padding-bottom: 20px;
 	background-color: #13151e;
 	position: relative;
 }
@@ -10,13 +10,22 @@ footer hr {
 }
 
 footer .wrapper {
-	padding: 75px 112px 0 112px;
+	padding:  0 112px;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
-footer .wrapper .content {
-	max-width: 30%;
+footer .wrapper .content{
+	margin: 30px 0;
+}
+
+footer .wrapper .content:nth-child(3) {
+	width: 230px;
+}
+
+footer .wrapper .content:nth-child(4){
+	width: 100px;
 }
 
 footer .wrapper .content h2 {
@@ -38,7 +47,7 @@ footer .wrapper .content a:hover {
 
 footer .wrapper .content p {
 	color: #fff;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 300;
 }
 
@@ -81,4 +90,11 @@ footer .logo-sosmed .sosmed {
 }
 footer .logo-sosmed .sosmed .icon img {
 	margin: 5px;
+}
+
+
+@media screen and (max-width: 600px){
+	footer .wrapper{
+		padding: 0 40px;
+	}
 }

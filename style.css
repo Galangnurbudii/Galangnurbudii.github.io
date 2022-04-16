@@ -28,7 +28,7 @@
 
 .left h1 {
 	font-weight: 700;
-	font-size: 72px;
+	font-size: 67px;
 	color: #d6222d;
 }
 
@@ -37,7 +37,6 @@
 }
 
 .container {
-	padding: 0 112px;
 	display: flex;
 	width: 100%;
 	justify-content: space-evenly;
@@ -52,7 +51,7 @@
 	/* justify-content: space-between; */
 }
 
-.left a {
+.container a {
 	width: 212px;
 	text-decoration: none;
 	font-family: "Ubuntu", sans-serif;
@@ -65,7 +64,7 @@
 	transition: 0.5s;
 }
 
-.left a:hover {
+.container a:hover {
 	background-color: #d6222d;
 	font-size: 1.1em;
 	transition: 0.5s;
@@ -74,17 +73,20 @@
 .right {
 	transform: translateX(-10px);
 	display: flex;
-	height: fit-content;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
 	margin: 10px;
 }
 
+.right a {
+	display: none;
+}
+
 .right div {
 	margin: 10px;
 	color: white;
-	font-size: 30px;
+	font-size: 37px;
 }
 
 .right img {
@@ -105,7 +107,6 @@
 	height: 863px;
 	display: flex;
 	align-items: center;
-	padding: 0 112px;
 	justify-content: space-between;
 }
 
@@ -123,13 +124,15 @@
 }
 
 .our-food .video video {
-	height: 360px;
+	height: 300px;
+	width: auto;
 }
 
 .our-food .description {
-	margin-left: 20px;
-	width: 40%;
+	width: 50%;
+	margin-left: 40px;
 	position: relative;
+	line-height: 150%;
 }
 
 .our-food .description a {
@@ -149,6 +152,8 @@
 
 .our-food .description .judul h1 {
 	margin: 0 10px 0 0;
+	font-size: 37px;
+	font-weight: 500;
 }
 
 .our-food .description .judul h1:nth-child(1),
@@ -160,7 +165,6 @@
 	display: flex;
 	align-items: center;
 	position: relative;
-	padding: 0 115px;
 	height: 1024px;
 	background-color: #13151e;
 }
@@ -169,6 +173,16 @@
 	position: absolute;
 	right: 165px;
 	top: 40px;
+	animation: rotation 30s infinite linear;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
 }
 
 .food .hiasan-bg img:nth-child(2) {
@@ -189,15 +203,14 @@
 	justify-content: space-between;
 }
 
-.food .content .foto-ramen img {
+.food .content img {
 	height: auto;
-	width: 100%;
+	width: 470px;
 }
 
 .food .content .text {
 	width: 45%;
 	position: relative;
-	/* padding: 0 115px; */
 }
 
 .food .content .text .title {
@@ -205,7 +218,7 @@
 }
 
 .food .content .text .title h1 {
-	font-size: 38px;
+	font-size: 37px;
 	margin: 0 5px;
 }
 
@@ -219,7 +232,8 @@
 
 .food .content .text .paragraph {
 	color: white;
-	line-height: 28px;
+	line-height: 150%;
+	font-weight: 500;
 }
 
 .food .content .text .see-more {
@@ -237,7 +251,6 @@
 	height: 1022px;
 	display: flex;
 	align-items: center;
-	padding: 0 115px;
 }
 
 .academy .bg img:nth-child(1) {
@@ -270,6 +283,7 @@
 
 .academy .content .text .title h1 {
 	margin: 0 5px 0 0;
+	font-size: 37px;
 }
 
 .academy .content .text .title h1:nth-child(1) {
@@ -281,7 +295,7 @@
 }
 
 .academy .content .text .paragraph p {
-	line-height: 1.45em;
+	line-height: 150%;
 }
 
 .academy .content .text .button {
@@ -300,7 +314,7 @@
 	color: #13151e;
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1235px) {
 	.hiasan-bawah img {
 		height: 72px;
 	}
@@ -337,15 +351,27 @@
 		align-items: center;
 	}
 	.our-food .description {
-		width: 70%;
+		width: 90%;
 		margin-top: 30px;
+		margin-left: 0;
 	}
 	.our-food img:nth-child(1) {
 		display: none;
 	}
 
-	.food .hiasan-bg img {
+	.food .hiasan-bg img:nth-child(2),
+	.food .hiasan-bg img:nth-child(3){
 		display: none;
+	}
+
+	.food .content {
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.food .content img {
+		width: 400px;
 	}
 
 	.food .content {
@@ -353,7 +379,7 @@
 	}
 
 	.food .content .text {
-		width: 70%;
+		width: 90%;
 	}
 
 	.academy .content {
@@ -363,7 +389,7 @@
 
 	.academy .content .text {
 		margin-top: 20px;
-		width: 70%;
+		width: 90%;
 	}
 }
 
@@ -373,7 +399,6 @@
 
 .popular-course {
 	background-color: #13151e;
-	padding: 0 115px;
 	height: 1024px;
 	display: flex;
 	flex-direction: column;
@@ -387,7 +412,7 @@
 .popular-course .title h1 {
 	color: white;
 	margin-right: 5px;
-	font-size: 37.5px;
+	font-size: 37px;
 }
 
 .popular-course .title h1:nth-child(2) {
@@ -470,4 +495,168 @@
 .popular-course .wrap .content .price h1 {
 	font-size: 22.5px;
 	font-weight: 500;
+}
+
+@media screen and (max-width: 940px) {
+	section {
+		padding: 0 80px;
+	}
+	.container {
+		padding: 0 50px;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0 0 80px 0;
+	}
+	.left,
+	.right {
+		margin: 20px 0;
+	}
+
+	.right {
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.left a {
+		display: none;
+	}
+	.right a {
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	.right div,
+	.right img {
+		margin: 10px 0;
+	}
+
+	.our-food .description{
+		width: 100%;
+	}
+
+	.our-food img{
+		width: 170px;
+		height: auto;
+	}
+
+	.food .hiasan-bg img:nth-child(1){
+		height: 170px;
+		width: auto;
+	}
+
+	.food{
+
+	}
+}
+
+@media screen and (max-width: 600px) {
+	section {
+		padding: 0 40px;
+	}
+
+	.landing-page{
+		width: 100%;
+		height: 500px;
+	}
+	
+	.landing-page .container{
+		padding: 40px 0 40px 0;
+	}
+
+	.hiasan-bawah img {
+		width: 300px;
+		height: auto;
+		bottom: 0;
+	}
+
+	.hiasan-kanan img{
+		height: 300px;
+		width: auto;
+	}
+
+	.left h1{
+		font-size: 36px;
+	}
+
+	.right img{
+		width: 240px;
+	}
+
+	.right div{
+		font-size: 18px;
+	}
+
+	.kanji-break img {
+		width: 600px;
+		height: auto;
+	}
+
+	.our-food{
+		margin-bottom: 100px;
+		padding: 40px 40px 0 40px;
+		height: auto;
+		justify-content: space-between;
+	}
+
+	.our-food img{
+		display: none;
+	}
+
+	.our-food .video video{
+		height: auto;
+		width: 90vw;
+	}
+	.our-food .description .paragraph{
+		margin-top: 0px;
+	}
+	.our-food .description .judul h1{
+		font-size: 21px;
+		margin-top: 20px;
+	}
+
+	.food{
+		
+		height: auto;
+		padding: 40px 40px 100px 40px;
+		/* margin-bottom: 100px; */
+	}
+
+	.food .content img{
+		width: 80vw;
+		height: auto;
+	}
+
+	.food .content .text .title h1{
+		margin-top: 20px;
+		font-size: 21px;
+	}
+
+	.food .content{
+		height: 100%;
+		justify-content: space-between;
+	}
+
+	.food .hiasan-bg img{
+		display: none;
+	}
+
+	.academy{
+		height: auto;
+		padding: 40px 40px 100px 40px;
+	}
+
+	.academy .bg{
+		display: none;	
+	}
+
+	.academy .content .chef-img img{
+		width: 80vw;
+		height: auto;
+	}
+
+	.popular-course{
+		height: auto;
+		padding: 40px 40px 100px 40px;
+	}
 }
