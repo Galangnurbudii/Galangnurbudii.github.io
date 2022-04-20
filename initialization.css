@@ -7,7 +7,7 @@
 	text-align: justify;
 }
 
-section{
+section {
 	padding: 0 112px;
 }
 
@@ -32,9 +32,30 @@ body {
 	text-decoration: none;
 }
 
+
 .button:hover {
 	/* border: none; */
 	font-size: 1.1em;
 	background-color: #d6222d;
+	transition: 0.5s;
+}
+
+.enroll{
+	color: white;
+	border-radius: 10px;
+	background-color: #d6222d;
+	height: 38px;
+	width: 138px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 500;
+	transition: 0.5s;
+}
+
+.enroll:hover{
+	background-color: #B21C25;
 	transition: 0.5s;
 }

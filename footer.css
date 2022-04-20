@@ -9,30 +9,26 @@ footer hr {
 	background-color: #d6222d;
 }
 
-footer .wrapper {
-	padding:  0 112px;
+footer ul {
+	list-style: none;
+	padding: 0 112px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 
-footer .wrapper .content{
-	margin: 30px 0;
+footer ul li {
+	margin: 30px auto;
+	padding: 0 30px;
+	max-width: 400px;
+	height: auto;
 }
 
-footer .wrapper .content:nth-child(3) {
-	width: 230px;
-}
-
-footer .wrapper .content:nth-child(4){
-	width: 100px;
-}
-
-footer .wrapper .content h2 {
+footer ul .content h2 {
 	color: #fff;
 }
 
-footer .wrapper .content a {
+footer ul .content a {
 	text-decoration: none;
 	color: #fff;
 	font-size: 16px;
@@ -40,12 +36,12 @@ footer .wrapper .content a {
 	transition: 0.5s;
 }
 
-footer .wrapper .content a:hover {
+footer ul .content a:hover {
 	border-bottom: solid white 1px;
 	transition: 0.5s;
 }
 
-footer .wrapper .content p {
+footer ul .content p {
 	color: #fff;
 	font-size: 14px;
 	font-weight: 300;
@@ -89,12 +85,6 @@ footer .logo-sosmed .sosmed {
 	flex-direction: column;
 }
 footer .logo-sosmed .sosmed .icon img {
-	margin: 5px;
-}
-
-
-@media screen and (max-width: 600px){
-	footer .wrapper{
-		padding: 0 40px;
-	}
+	margin: 10px;
+	height: 25px;
 }

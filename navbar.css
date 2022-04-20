@@ -7,10 +7,6 @@ header {
 	padding: 0 112px;
 }
 
-body{
-	overflow-x: hidden;
-}
-
 .navbar ul {
 	width: 640px;
 	display: flex;
@@ -72,14 +68,14 @@ body{
 	transform: translateY(-17.5px) rotate(-45deg);
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1235px) {
 	.navbar ul {
 		width: 540px;
 	}
 }
 
 @media screen and (max-width: 940px) {
-	header{
+	header {
 		padding: 0 80px;
 	}
 	.navbar ul {
@@ -93,13 +89,13 @@ body{
 		justify-content: space-evenly;
 		background-color: #13151e;
 		z-index: 2;
-		transform: translateX(100%);
 		transition: 1s;
-		transition-timing-function: ease-in-out;
+		transform: translateY(-100%);
+		transition-timing-function: ease-out;
 	}
-	
-	.navbar ul.slide{
-		transform: translateX(0);
+
+	.navbar ul.slide {
+		transform: translate(0);
 	}
 	.burger-wrap {
 		display: flex;
@@ -107,7 +103,7 @@ body{
 }
 
 @media screen and (max-width: 764px) {
-	header{
+	header {
 		padding: 0 40px;
 	}
 }

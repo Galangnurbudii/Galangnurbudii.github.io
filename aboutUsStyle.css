@@ -1,0 +1,208 @@
+@import url("initialization.css");
+@import url("navbar.css");
+@import url("footer.css");
+@import url("video.css");
+@import url("kanji-break.css");
+
+.navbar ul li:nth-child(3){
+	border-bottom: white 2px solid;
+}
+
+.our-food .description a {
+	display: none;
+}
+
+
+.branch {
+	background-color: #13151e;
+	padding: 80px 112px;
+	width: 100%;
+	position: relative;
+}
+
+.branch h1 {
+	color: white;
+	font-size: 37px;
+}
+
+.branch h1::after {
+	content: " Branch";
+	color: #d6222d;
+}
+
+.branch .content {
+	display: flex;
+	margin: 30px 0;
+	align-items: center;
+	width: 100%;
+}
+
+.branch .content .text h2 {
+	font-size: 28px;
+	color: white;
+	line-height: 145%;
+	font-weight: 500;
+}
+
+.branch .content .text p {
+	color: white;
+	font-size: 16px;
+	line-height: 145%;
+}
+
+.branch .content img {
+	width: 48%;
+	height: auto;
+}
+
+.branch .content .text {
+	width: 48%;
+	height: auto;
+}
+
+.branch .content:nth-child(even) .text {
+	margin-left: 4%;
+}
+
+.branch .content:nth-child(odd) .text {
+	order: 1;
+	margin-right: 4%;
+}
+
+.branch .content:nth-child(odd) img {
+	order: 2;
+}
+
+.vismis {
+	position: relative;
+	padding: 160px 112px;
+	display: flex;
+	align-items: center;
+}
+
+.vismis img,
+.vismis .text {
+	width: 48%;
+	height: auto;
+}
+
+.vismis .bg img {
+	position: absolute;
+}
+
+.vismis .bg img:first-child {
+	right: 0;
+	top: 0;
+	transform: rotate(180deg) translateY(1px);
+}
+
+.vismis .bg img:last-child {
+	bottom: 0;
+	left: 0;
+	transform: translateY(2px);
+}
+
+.vismis .text {
+	margin-left: 4%;
+}
+
+.vismis .text h2 {
+	font-size: 37px;
+	font-weight: 500;
+	line-height: 145%;
+}
+
+.vismis .text h2:nth-child(1)::after {
+	content: " Vission";
+	color: #d6222d;
+}
+
+.vismis .text h3 {
+	font-size: 28px;
+	line-height: 145%;
+	font-weight: 500;
+}
+
+.vismis .text h2:nth-child(4)::after {
+	content: "Mission";
+	color: #d6222d;
+}
+
+.vismis .text ol {
+	list-style-position: inside;
+}
+
+.vismis .text li {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+@media screen and (max-width: 1235px) {
+	.branch .content {
+		flex-direction: column;
+	}
+	.branch .content img {
+		width: 80%;
+	}
+
+	.branch .content .text {
+		margin: 20px 40px;
+	}
+
+	.branch .content:nth-child(even) .text {
+		margin: 25px 0 50px 0;
+		width: 100%;
+	}
+	.branch .content:nth-child(odd) .text {
+		margin: 25px 0 50px 0;
+		order: 3;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 940px) {
+	.branch {
+		padding: 80px 80px;
+	}
+
+	.vismis {
+		flex-direction: column;
+		padding: 100px 80px;
+	}
+
+	.vismis .bg img {
+		width: 50%;
+		height: auto;
+	}
+
+	.vismis img {
+		width: 80%;
+		height: auto;
+	}
+	.vismis .text {
+		width: 100%;
+		margin: 25px 0 50px 0;
+	}
+}
+
+@media screen and (max-width: 764px) {
+	.branch,
+	.vismis {
+		padding: 40px 40px;
+	}
+	.vismis .bg img {
+		display: none;
+	}
+
+	.vismis .text h2 {
+		font-size: 21px;
+	}
+
+	.vismis .text h3 {
+		font-size: 18px;
+	}
+
+	.vismis .text ol li {
+		font-size: 16px;
+	}
+}

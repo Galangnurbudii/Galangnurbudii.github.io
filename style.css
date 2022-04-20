@@ -1,6 +1,8 @@
 @import url("initialization.css");
 @import url("navbar.css");
 @import url("footer.css");
+@import url("video.css");
+@import url("kanji-break.css");
 
 .navbar ul li:nth-child(1) {
 	border-bottom: white 2px solid;
@@ -86,79 +88,13 @@
 .right div {
 	margin: 10px;
 	color: white;
-	font-size: 37px;
+	font-size: 28px;
+	font-weight: 500;
 }
 
 .right img {
 	width: 500px;
 	height: auto;
-}
-
-.kanji-break {
-	height: 160px;
-	background-color: #d6222d;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.our-food {
-	position: relative;
-	height: 863px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.our-food img:nth-child(1) {
-	position: absolute;
-	left: 0;
-	bottom: -35px;
-	z-index: -1;
-}
-
-.our-food img:nth-child(2) {
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-
-.our-food .video video {
-	height: 300px;
-	width: auto;
-}
-
-.our-food .description {
-	width: 50%;
-	margin-left: 40px;
-	position: relative;
-	line-height: 150%;
-}
-
-.our-food .description a {
-	position: absolute;
-	right: 0;
-	transition: 0.5s;
-}
-
-.our-food .description a:hover {
-	color: #fff;
-	transition: 0.5s;
-}
-
-.our-food .description .judul {
-	display: flex;
-}
-
-.our-food .description .judul h1 {
-	margin: 0 10px 0 0;
-	font-size: 37px;
-	font-weight: 500;
-}
-
-.our-food .description .judul h1:nth-child(1),
-.our-food .description .judul h1:nth-child(4) {
-	color: #d6222d;
 }
 
 .food {
@@ -200,16 +136,17 @@
 .food .content {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 }
 
 .food .content img {
 	height: auto;
-	width: 470px;
+	width: 48%;
 }
 
 .food .content .text {
-	width: 45%;
+	width: 48%;
+	margin-left: 4%;
 	position: relative;
 }
 
@@ -219,14 +156,13 @@
 
 .food .content .text .title h1 {
 	font-size: 37px;
-	margin: 0 5px;
+	font-weight: 500;
+	line-height: 145%;
+	color: #fff;
 }
 
-.food .content .text .title h1:nth-child(1) {
-	color: white;
-}
-
-.food .content .text .title h1:nth-child(2) {
+.food .content .text .title h1::after {
+	content: " Cuisine";
 	color: #d6222d;
 }
 
@@ -268,12 +204,18 @@
 
 .academy .content {
 	display: flex;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	align-items: center;
 }
 
+.academy .content img {
+	width: 48%;
+	height: auto;
+}
+
 .academy .content .text {
-	width: 40%;
+	width: 48%;
+	margin-left: 4%;
 	position: relative;
 }
 
@@ -282,15 +224,13 @@
 }
 
 .academy .content .text .title h1 {
-	margin: 0 5px 0 0;
 	font-size: 37px;
-}
-
-.academy .content .text .title h1:nth-child(1) {
 	color: #13151e;
+	font-weight: 500;
 }
 
-.academy .content .text .title h1:nth-child(2) {
+.academy .content .text .title h1::after {
+	content: " Academy";
 	color: #d6222d;
 }
 
@@ -339,28 +279,9 @@
 		font-size: 24px;
 		/* order: 1; */
 	}
-	.kanji-break {
-		height: 60%;
-	}
-	.kanji-break img {
-		transform: scale(0.6);
-	}
-	.our-food {
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-	.our-food .description {
-		width: 90%;
-		margin-top: 30px;
-		margin-left: 0;
-	}
-	.our-food img:nth-child(1) {
-		display: none;
-	}
 
 	.food .hiasan-bg img:nth-child(2),
-	.food .hiasan-bg img:nth-child(3){
+	.food .hiasan-bg img:nth-child(3) {
 		display: none;
 	}
 
@@ -411,8 +332,14 @@
 
 .popular-course .title h1 {
 	color: white;
-	margin-right: 5px;
 	font-size: 37px;
+	font-weight: 500;
+	line-height: 145%;
+}
+
+.popular-course .title h1::after {
+	color: #d6222d;
+	content: " Course";
 }
 
 .popular-course .title h1:nth-child(2) {
@@ -484,13 +411,7 @@
 	justify-content: space-between;
 }
 
-.popular-course .wrap .content .price a {
-	text-decoration: none;
-	color: #fff;
-	background-color: #d6222d;
-	padding: 10px 14px;
-	border-radius: 10px;
-}
+
 
 .popular-course .wrap .content .price h1 {
 	font-size: 22.5px;
@@ -531,36 +452,23 @@
 		margin: 10px 0;
 	}
 
-	.our-food .description{
-		width: 100%;
-	}
-
-	.our-food img{
-		width: 170px;
-		height: auto;
-	}
-
-	.food .hiasan-bg img:nth-child(1){
+	.food .hiasan-bg img:nth-child(1) {
 		height: 170px;
 		width: auto;
 	}
-
-	.food{
-
-	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 764px) {
 	section {
 		padding: 0 40px;
 	}
 
-	.landing-page{
+	.landing-page {
 		width: 100%;
 		height: 500px;
 	}
-	
-	.landing-page .container{
+
+	.landing-page .container {
 		padding: 40px 0 40px 0;
 	}
 
@@ -570,92 +478,69 @@
 		bottom: 0;
 	}
 
-	.hiasan-kanan img{
+	.hiasan-kanan img {
 		height: 300px;
 		width: auto;
 	}
 
-	.left h1{
+	.left h1 {
 		font-size: 36px;
 	}
 
-	.right img{
+	.right img {
 		width: 240px;
 	}
 
-	.right div{
+	.right div {
 		font-size: 18px;
 	}
 
-	.kanji-break img {
-		width: 600px;
-		height: auto;
-	}
-
-	.our-food{
+	.our-food {
 		margin-bottom: 100px;
 		padding: 40px 40px 0 40px;
 		height: auto;
 		justify-content: space-between;
 	}
 
-	.our-food img{
-		display: none;
-	}
-
-	.our-food .video video{
-		height: auto;
-		width: 90vw;
-	}
-	.our-food .description .paragraph{
-		margin-top: 0px;
-	}
-	.our-food .description .judul h1{
-		font-size: 21px;
-		margin-top: 20px;
-	}
-
-	.food{
-		
+	.food {
 		height: auto;
 		padding: 40px 40px 100px 40px;
-		/* margin-bottom: 100px; */
 	}
 
-	.food .content img{
-		width: 80vw;
+	.food .content img {
+		width: 80%;
 		height: auto;
 	}
 
-	.food .content .text .title h1{
+	.food .content .text .title h1 {
 		margin-top: 20px;
 		font-size: 21px;
 	}
 
-	.food .content{
+	.food .content {
 		height: 100%;
 		justify-content: space-between;
 	}
 
-	.food .hiasan-bg img{
+	.food .hiasan-bg img {
 		display: none;
 	}
 
-	.academy{
+	.academy {
 		height: auto;
 		padding: 40px 40px 100px 40px;
 	}
 
-	.academy .bg{
-		display: none;	
+	.academy .bg {
+		display: none;
 	}
 
-	.academy .content .chef-img img{
-		width: 80vw;
+	.academy .content img {
+		width: 80%;
 		height: auto;
 	}
 
-	.popular-course{
+	.popular-course {
 		height: auto;
 		padding: 40px 40px 100px 40px;
 	}

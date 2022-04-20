@@ -1,0 +1,23 @@
+.kanji-break {
+	height: 160px;
+	background-color: #d6222d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 1235px) {
+	.kanji-break {
+		height: 60%;
+	}
+	.kanji-break img {
+		transform: scale(0.6);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.kanji-break img {
+		width: 600px;
+		height: auto;
+	}
+}
