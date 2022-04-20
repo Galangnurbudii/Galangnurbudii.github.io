@@ -1,9 +1,9 @@
-var video = document.getElementById("video");
+const video = document.getElementById("video");
 function printScroll() {
-	// console.log(document.documentElement.scrollTop)
+	let top =video.getBoundingClientRect().top
+	console.log(top)
 	if (
-		document.documentElement.scrollTop > 800 &&
-		document.documentElement.scrollTop < 1450
+		top < 485 && top > 3
 	) {
 		video.play();
 	} else {
