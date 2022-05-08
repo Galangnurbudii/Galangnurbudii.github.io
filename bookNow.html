@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Foodies</title>
+        <link rel="stylesheet" href="bookNowStyle.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="Assets/Logo Foodies.svg" alt="" />
+            </div>
+            <div class="navbar">
+                <ul id="ul" class="">
+                    <li class="tab">
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li class="tab">
+                        <a href="/academy.html">Academy</a>
+                    </li>
+                    <li class="tab">
+                        <a href="/aboutUs.html">About Us</a>
+                    </li>
+                    <li class="tab">
+                        <a href="/contactUs.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="/bookNow.html" class="button">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="burger-wrap">
+                <div id="burger-button" class="">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </header>
+
+        <div class="title">
+            <h1>Book your</h1>
+            <h2>
+                Don't be afraid you'll run out of space, set a date and fill out
+                the form to order.
+            </h2>
+        </div>
+
+        <section class="form">
+            <div class="left">
+                <img src="/Assets-book now/form.png" alt="" />
+                <h1>FOODIES</h1>
+                <h2>JAPANESE</h2>
+            </div>
+            <form action="#" onsubmit="return isValid">
+                <div class="wrap" id="input-name">
+                    <div class="label">Name</div>
+                    <input
+                        type="text"
+                        placeholder="Your name"
+                        name="name"
+                        class="input-box"
+                        id="name"
+                    />
+                    <div class="error">*Name must be two words</div>
+                </div>
+
+                <div class="wrap" id="location">
+                    <div class="label">Location</div>
+                    <div class="dropdown" id="locationDropdown">
+                        <h1>Foodies Branches</h1>
+                        <img
+                            src="/Assets-book now/arrow.svg"
+                            alt=""
+                            id="locationDropdownArrow"
+                        />
+                    </div>
+                    <div class="error">*Please Choose location</div>
+
+                    <div class="dropdown-box" id="locationDropdownBox">
+                        <div>
+                            <input type="radio" name="location" id="bali" />
+                            <label for="bali">Bali</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="location" id="jakarta" />
+                            <label for="jakarta">Jakarta</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="location" id="ponorogo" />
+                            <label for="ponorogo">Ponorogo</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrap" id="reservationType">
+                    <div class="label">Reservation Type</div>
+                    <div class="dropdown" id="reservationTypeDropdown">
+                        <h1>Choose here...</h1>
+                        <img
+                            src="/Assets-book now/arrow.svg"
+                            alt=""
+                            id="reservationTypeDropdownArrow"
+                        />
+                    </div>
+                    <div class="error">*Please Choose Reservation Type</div>
+
+                    <div class="dropdown-box" id="reservationTypeDropdownBox">
+                        <div>
+                            <input
+                                type="radio"
+                                name="reservationType"
+                                id="birthday"
+                            />
+                            <label for="birthday">Birthday / Anniversary</label>
+                        </div>
+
+                        <div>
+                            <input
+                                type="radio"
+                                name="reservationType"
+                                id="corporate"
+                            />
+                            <label for="corporate">Corporate</label>
+                        </div>
+                        <div>
+                            <input
+                                type="radio"
+                                name="reservationType"
+                                id="dinner"
+                            />
+                            <label for="dinner">Dinner</label>
+                        </div>
+                        <div>
+                            <input
+                                type="radio"
+                                name="reservationType"
+                                id="lunch"
+                            />
+                            <label for="lunch">Lunch</label>
+                        </div>
+                        <div>
+                            <input
+                                type="radio"
+                                name="reservationType"
+                                id="private"
+                            />
+                            <label for="private">Private</label>
+                        </div>
+                        <div>
+                            <input
+                                type="radio"
+                                name="reservationType"
+                                id="wedding"
+                            />
+                            <label for="wedding">Wedding</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrap" id="input-numberOfPeople">
+                    <div class="label">Number of People</div>
+                    <input
+                        type="number"
+                        placeholder="How many people?"
+                        name="NumberOfPeople"
+                        class="input-box"
+                    />
+                    <div class="error">*Please input 1 - 50</div>
+                </div>
+                <div class="wrap" id="input-phoneNumber">
+                    <div class="label">Phone Number</div>
+                    <input
+                        type="number"
+                        placeholder="62xxxxxxxxxxxxx"
+                        name="phoneNumber"
+                        class="input-box"
+                    />
+                    <div class="error">*Please input a valid phone number</div>
+                </div>
+                <div class="wrap">
+                    <div class="date-time-wrap">
+                        <div class="date" id="input-date">
+                            <div class="label">Date</div>
+                            <input
+                                type="date"
+                                name="date"
+                                class="input-box"
+                                id="date"
+                            />
+                            <div class="error">*Please Input valid Date</div>
+                        </div>
+                        <div class="time" id="time">
+                            <div class="label">Time</div>
+                            <div class="dropdown" id="timeDropdown">
+                                <h1>--:--: --</h1>
+                                <img
+                                    src="/Assets-book now/arrow.svg"
+                                    alt=""
+                                    id="timeDropdownArrow"
+                                />
+                            </div>
+                            <div class="error">
+                                *Please choose time
+                            </div>
+                            <div class="dropdown-box" id="timeDropdownBox">
+                                <div>
+                                    <input type="radio" name="time" id="10" />
+                                    <label for="10">10 : 00</label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="time" id="12" />
+                                    <label for="12">12 : 00</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="time" id="16" />
+                                    <label for="16">16 : 00</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="time" id="20" />
+                                    <label for="20">20 : 00</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="label">Additional Request</div>
+                    <textarea
+                        name="message"
+                        id="message"
+                        cols="30"
+                        rows="10"
+                        placeholder="If any, write here..."
+                    ></textarea>
+                </div>
+                <!-- <input type="submit" disabled> -->
+                <input type="submit" value="Book" class="disabled" id="submit" disabled/>
+            </form>
+        </section>
+
+        <footer>
+            <hr />
+            <ul>
+                <li class="content">
+                    <h2>Help</h2>
+                    <br />
+                    <div>
+                        <a href="#">Support</a>
+                    </div>
+                    <br />
+                    <div>
+                        <a> href="#">FAQ</a>
+                    </div>
+                </li>
+
+                <li class="content">
+                    <h2>Information</h2>
+                    <br />
+                    <div>
+                        <a href="#">Academy</a>
+                    </div>
+                    <br />
+                    <div>
+                        <a href="#">Booking Table</a>
+                    </div>
+                    <br />
+                    <div>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </li>
+
+                <li class="content">
+                    <h2>Open</h2>
+                    <br />
+                    <p>Sunday - Friday : 10 : 00 - 21 : 00</p>
+                    <br />
+                    <p>Saturday - Sunday : 09 : 00 - 22 : 00</p>
+                </li>
+                <li class="content">
+                    <h2>Location</h2>
+                    <br />
+                    <div>
+                        <a href=""
+                            >Bali - Jl. Bypass Ngurah Rai No.128, Benoa, Kec.
+                            Kuta Sel., Kabupaten Badung</a
+                        >
+                    </div>
+                    <br />
+                    <div>
+                        <a href=""
+                            >Jakarta - 10, Jl. Suryo No.1, RT.10/RW.3, Rw. Bar.,
+                            Kec. Kby. Baru, Kota Jakarta Selatan</a
+                        >
+                    </div>
+                    <br />
+                    <div>
+                        <a href=""
+                            >Ponorogo - Jl. Kalimantan No.96, Banyudono, Kec.
+                            Ponorogo</a
+                        >
+                    </div>
+                </li>
+            </ul>
+
+            <div class="back-to-top" id="backToTop">
+                <button type="button">
+                    <img src="Assets/Back To Top.png" alt="" />
+                </button>
+            </div>
+            <div class="logo-sosmed">
+                <img src="Assets/Logo Foodies.svg" alt="" />
+                <div class="sosmed">
+                    Connect with us
+                    <div class="icon">
+                        <img src="/Assets/WA.svg" alt="" />
+                        <img src="Assets/IG.svg" alt="" />
+                        <img src="/Assets/facebook.svg" alt="" />
+                        <img src="/Assets/youtube.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

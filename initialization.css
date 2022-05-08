@@ -20,27 +20,62 @@ body {
 	font-family: "Ubuntu", sans-serif;
 }
 
-.button {
-	color: #13151e;
-	border: #d6222d solid 3px;
+.wrap::-webkit-scrollbar {
+	width: auto;
+}
+
+.wrap::-webkit-scrollbar-track {
+	background-color: #fff;
 	border-radius: 10px;
-	height: 43px;
-	width: 165px;
+}
+
+.wrap::-webkit-scrollbar-thumb {
+	background-color: #d6222d;
+	border-radius: 10px;
+}
+
+button,.button {
+	border: none;
+	font-family: "Ubuntu",sans-serif;
+	color: white;
+	background-color: #d6222d;
+	font-size: 16px;
+	font-weight: 500;
+	border-radius: 10px;
+	height: 42px;
+	width: 152px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-decoration: none;
-}
-
-
-.button:hover {
-	/* border: none; */
-	font-size: 1.1em;
-	background-color: #d6222d;
 	transition: 0.5s;
 }
 
-.enroll{
+.disabled{
+	width: 152px;
+	height: 42px;
+	font-family: "Ubuntu",sans-serif;
+	color: #B0B1B4;
+	background-color: #D0D0D2;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+
+.button:hover,button:hover {
+	cursor: pointer;
+	height: 46px;
+	width: 155px;
+	font-size: 18px;
+	background-color: #A01019;
+	transition: 0.5s;
+}
+
+.button-course{
 	color: white;
 	border-radius: 10px;
 	background-color: #d6222d;
@@ -55,7 +90,7 @@ body {
 	transition: 0.5s;
 }
 
-.enroll:hover{
-	background-color: #B21C25;
+.button-course:hover{
+	background-color: #A01019;
 	transition: 0.5s;
 }

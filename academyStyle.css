@@ -1,0 +1,229 @@
+@import url("initialization.css");
+@import url("navbar.css");
+@import url("footer.css");
+@import url("popular-course.css");
+
+.navbar ul li:nth-child(2){
+	border-bottom: white 2px solid;
+}
+
+.academy {
+    position: relative;
+    height: 1022px;
+    display: flex;
+    align-items: center;
+}
+
+.academy .bg img:nth-child(1) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.academy .bg img:nth-child(2) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(180deg);
+}
+
+.academy .content {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.academy .content img {
+    order: 2;
+    width: 48%;
+    height: auto;
+}
+
+.academy .content .text {
+    order: 1;
+    width: 48%;
+    margin-right: 4%;
+    position: relative;
+}
+
+.academy .content .text .title {
+    display: flex;
+}
+
+.academy .content .text .title h1 {
+    font-size: 37px;
+    color: #13151e;
+    font-weight: 500;
+}
+
+.academy .content .text .title h1::after {
+    content: " Academy";
+    color: #d6222d;
+}
+
+.academy .content .text .paragraph p {
+    line-height: 150%;
+}
+
+.new-course {
+    padding: 80px 112px;
+    background-color: #13151e;
+}
+
+.new-course .title {
+    color: white;
+    font-size: 37px;
+    font-weight: 500;
+}
+
+.new-course .title::after {
+    color: #d6222d;
+    content: " Course";
+}
+
+.new-course .box {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 45px;
+    padding: 40px 80px 40px 40px;
+}
+
+.new-course .box img {
+    margin-right: 50px;
+}
+
+.new-course .box .content h1 {
+    color: #13151e;
+    font-size: 37px;
+    font-weight: 500;
+}
+
+.new-course .box .content p {
+    font-size: 16px;
+    line-height: 145%;
+}
+
+.new-course .box .content .wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.new-course .box .content .wrap .button {
+    background-color: #d6222d;
+    color: white;
+}
+
+.hr-break {
+    background-color: #d6222d;
+    border: solid #d6222d 1px;
+}
+
+.galery-member {
+    background-color: #13151e;
+    padding: 80px 112px;
+}
+
+.galery-member .title {
+    color: white;
+    font-size: 37px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.galery-member .title::after {
+    content: " Member's";
+    color: #d6222d;
+}
+
+.galery-member .wrap {
+    display: flex;
+    overflow-x: scroll;
+    padding-bottom: 60px;
+}
+
+.galery-member .wrap img {
+    width: 500px;
+    height: auto;
+    padding-left: 20px;
+}
+
+.alumni-testi {
+    background-color: #13151e;
+    padding: 80px 112px;
+}
+
+.alumni-testi .title {
+    color: white;
+    font-size: 37px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.alumni-testi .title::after {
+    content: " Testimonials";
+    color: #d6222d;
+}
+
+.alumni-testi .wrap {
+    display: flex;
+    overflow-x: scroll;
+    padding-bottom: 60px;
+}
+
+.alumni-testi .wrap .box {
+    align-items: center;
+    min-width: 500px;
+    display: flex;
+    padding: 54px 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-right: 32px;    
+}
+
+.alumni-testi .wrap .box img{
+    margin-right: 36px;
+}
+
+.alumni-testi .wrap .box .content .rating{
+    position: relative;
+    width: 92px;
+    height: 16px;
+}
+
+.alumni-testi .wrap .box .content .rating img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 1235px) {
+    .academy .content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .academy .content .text {
+        margin-top: 20px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .academy {
+        height: auto;
+        padding: 40px 40px 100px 40px;
+    }
+
+    .academy .bg {
+        display: none;
+    }
+
+    .academy .content img {
+        width: 80%;
+        height: auto;
+    }
+}
