@@ -48,11 +48,11 @@
         </header>
 
         <div class="title">
-            <h1>Book your</h1>
-            <h2>
+            <h2>Book your</h2>
+            <p>
                 Don't be afraid you'll run out of space, set a date and fill out
                 the form to order.
-            </h2>
+            </p>
         </div>
 
         <section class="form">
@@ -61,7 +61,7 @@
                 <h1>FOODIES</h1>
                 <h2>JAPANESE</h2>
             </div>
-            <form action="#" onsubmit="return isValid">
+            <form action="#" id="form">
                 <div class="wrap" id="input-name">
                     <div class="label">Name</div>
                     <input
@@ -77,7 +77,7 @@
                 <div class="wrap" id="location">
                     <div class="label">Location</div>
                     <div class="dropdown" id="locationDropdown">
-                        <h1>Foodies Branches</h1>
+                        <p>Foodies Branches</p>
                         <img
                             src="/Assets-book now/arrow.svg"
                             alt=""
@@ -88,15 +88,15 @@
 
                     <div class="dropdown-box" id="locationDropdownBox">
                         <div>
-                            <input type="radio" name="location" id="bali" />
+                            <input type="radio" name="location" id="bali" value="bali" />
                             <label for="bali">Bali</label>
                         </div>
                         <div>
-                            <input type="radio" name="location" id="jakarta" />
+                            <input type="radio" name="location" id="jakarta" value="jakarta" />
                             <label for="jakarta">Jakarta</label>
                         </div>
                         <div>
-                            <input type="radio" name="location" id="ponorogo" />
+                            <input type="radio" name="location" id="ponorogo" value="ponorogo" />
                             <label for="ponorogo">Ponorogo</label>
                         </div>
                     </div>
@@ -105,7 +105,7 @@
                 <div class="wrap" id="reservationType">
                     <div class="label">Reservation Type</div>
                     <div class="dropdown" id="reservationTypeDropdown">
-                        <h1>Choose here...</h1>
+                        <p>Choose here...</p>
                         <img
                             src="/Assets-book now/arrow.svg"
                             alt=""
@@ -120,6 +120,7 @@
                                 type="radio"
                                 name="reservationType"
                                 id="birthday"
+                                value="birthday"
                             />
                             <label for="birthday">Birthday / Anniversary</label>
                         </div>
@@ -129,6 +130,8 @@
                                 type="radio"
                                 name="reservationType"
                                 id="corporate"
+                                value="corporate"
+
                             />
                             <label for="corporate">Corporate</label>
                         </div>
@@ -137,6 +140,7 @@
                                 type="radio"
                                 name="reservationType"
                                 id="dinner"
+                                value="dinner"
                             />
                             <label for="dinner">Dinner</label>
                         </div>
@@ -145,6 +149,7 @@
                                 type="radio"
                                 name="reservationType"
                                 id="lunch"
+                                value="lunch"
                             />
                             <label for="lunch">Lunch</label>
                         </div>
@@ -153,6 +158,7 @@
                                 type="radio"
                                 name="reservationType"
                                 id="private"
+                                value="private"
                             />
                             <label for="private">Private</label>
                         </div>
@@ -161,6 +167,7 @@
                                 type="radio"
                                 name="reservationType"
                                 id="wedding"
+                                value="wedding"
                             />
                             <label for="wedding">Wedding</label>
                         </div>
@@ -202,32 +209,30 @@
                         <div class="time" id="time">
                             <div class="label">Time</div>
                             <div class="dropdown" id="timeDropdown">
-                                <h1>--:--: --</h1>
+                                <p>--:--: --</p>
                                 <img
                                     src="/Assets-book now/arrow.svg"
                                     alt=""
                                     id="timeDropdownArrow"
                                 />
                             </div>
-                            <div class="error">
-                                *Please choose time
-                            </div>
+                            <div class="error">*Please choose time</div>
                             <div class="dropdown-box" id="timeDropdownBox">
                                 <div>
-                                    <input type="radio" name="time" id="10" />
+                                    <input type="radio" name="time" id="10" value="10:00" />
                                     <label for="10">10 : 00</label>
                                 </div>
 
                                 <div>
-                                    <input type="radio" name="time" id="12" />
+                                    <input type="radio" name="time" id="12" value="12:00" />
                                     <label for="12">12 : 00</label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="time" id="16" />
+                                    <input type="radio" name="time" id="16" value="16:00" />
                                     <label for="16">16 : 00</label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="time" id="20" />
+                                    <input type="radio" name="time" id="20" value="20:00" />
                                     <label for="20">20 : 00</label>
                                 </div>
                             </div>
@@ -244,10 +249,24 @@
                         placeholder="If any, write here..."
                     ></textarea>
                 </div>
-                <!-- <input type="submit" disabled> -->
-                <input type="submit" value="Book" class="disabled" id="submit" disabled/>
+                <button type="button" class="disabled" id="submit" disabled>Submit</button>
             </form>
         </section>
+        <div class="popup" id="popup">
+            <div class="popUpmessage">
+                <a href="bookNow.html">
+                    <img src="/Assets-book now/x.png" alt="" id="close" />
+                </a>
+                <img src="/Assets-book now/ceklist.png" alt="" />
+                <h2>YOU HAVE BEEN BOOK A TABLE</h2>                
+                <p>
+                    Thank you for choosing us to help you try original taste of
+                    Japanese cuisine. We can't wait for you to come to our
+                    restaurant
+                </p>
+            </div>
+            <div class="bg"></div>
+        </div>
 
         <footer>
             <hr />
@@ -260,7 +279,7 @@
                     </div>
                     <br />
                     <div>
-                        <a> href="#">FAQ</a>
+                        <a href="#">FAQ</a>
                     </div>
                 </li>
 
@@ -333,5 +352,8 @@
         </footer>
 
         <script src="script.js"></script>
+		<script src="navbarScript.js"></script>
+		<script src="footerScript.js"></script>
+
     </body>
 </html>

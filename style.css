@@ -1,7 +1,6 @@
 @import url("initialization.css");
 @import url("navbar.css");
 @import url("footer.css");
-@import url("video.css");
 @import url("kanji-break.css");
 @import url("popular-course.css");
 
@@ -99,6 +98,8 @@
 	animation: rotation 30s infinite linear;
 }
 
+
+
 @keyframes rotation {
 	from {
 		transform: rotate(0deg);
@@ -161,12 +162,70 @@
 
 .food .content .text .see-more {
 	position: absolute;
-	right: 0;
 }
 
 .food .content .text .see-more a {
 	color: white;
 	transition: 0.5s;
+}
+
+.our-food {
+	position: relative;
+	height: 863px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.our-food img:nth-child(1) {
+	position: absolute;
+	left: 0;
+	bottom: -35px;
+	z-index: -1;
+}
+
+.our-food img:nth-child(2) {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.our-food video {
+	width: 48%;
+	height: auto;
+}
+
+.our-food .description {
+	width: 58%;
+	margin-left: 4%;
+	position: relative;
+	line-height: 145%;
+}
+
+.our-food .description a {
+	position: absolute;
+	transition: 0.5s;
+}
+
+.our-food .description a:hover {
+	color: #fff;
+	transition: 0.5s;
+}
+
+.our-food .description .judul {
+	display: flex;
+}
+
+.our-food .description .judul h1 {
+	font-size: 37px;
+	font-weight: 500;
+	text-align: left;
+	line-height: 145%;
+}
+
+.our-food .description .judul h1::after {
+	content: " Japanese Restaurant";
+	color: #d6222d;
 }
 
 .academy {
@@ -227,7 +286,6 @@
 
 .academy .content .text .button {
 	position: absolute;
-	right: 0;
 	transition: 0.5s;
 }
 
@@ -294,6 +352,24 @@
 		margin-top: 20px;
 		width: 90%;
 	}
+	.our-food {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.our-food video {
+		width: 70%;
+	}
+
+	.our-food .description {
+		width: 90%;
+		margin-top: 30px;
+		margin-left: 0;
+	}
+	.our-food img:nth-child(1) {
+		display: none;
+	}
 }
 
 /* .academy .content .text .button ul li:nth-child(2) a{
@@ -339,6 +415,18 @@
 	.food .hiasan-bg img:nth-child(1) {
 		height: 170px;
 		width: auto;
+	}
+	.our-food .description {
+		width: 100%;
+	}
+
+	.our-food video {
+		width: 90%;
+	}
+
+	.our-food img {
+		width: 170px;
+		height: auto;
 	}
 }
 
@@ -423,6 +511,27 @@
 		width: 80%;
 		height: auto;
 	}
+	.our-food {
+		margin-bottom: 100px;
+		padding: 40px 40px 0 40px;
+		height: auto;
+		justify-content: space-between;
+	}
 
+	.our-food img {
+		display: none;
+	}
+
+	.our-food video {
+		height: auto;
+		width: 80%;
+	}
+	.our-food .description .paragraph {
+		margin-top: 0px;
+	}
+	.our-food .description .judul h1 {
+		font-size: 21px;
+		margin-top: 20px;
+	}
 	
 }

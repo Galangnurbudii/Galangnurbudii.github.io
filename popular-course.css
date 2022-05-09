@@ -89,4 +89,11 @@
 		height: auto;
 		padding: 40px 40px 100px 40px;
 	}
+
+	.popular-course .title h1{
+		font-size: 21px;
+	}
+	.popular-course .wrap .content{
+		margin-top: 20px;
+	}
 }

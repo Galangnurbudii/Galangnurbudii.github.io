@@ -7,19 +7,17 @@
     background-color: #13151e;
 }
 
-.title h1 {
-    font-size: 37px;
+.title h2 {
     color: white;
-    font-weight: 500;
     margin-bottom: 40px;
 }
 
-.title h1::after {
+.title h2::after {
     content: " Table";
     color: #d6222d;
 }
 
-.title h2 {
+.title p {
     font-size: 18px;
     color: white;
     font-weight: 700;
@@ -29,17 +27,19 @@
 .form {
     display: flex;
     background-color: #13151e;
+    padding: 0 112px;
 }
 
 .form .left {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-right: 40px;
+    margin-right: 6%;
+    width: 47%;
 }
 
 .form .left img {
     margin-bottom: 50px;
+
 }
 
 .form .left h1 {
@@ -47,9 +47,11 @@
     font-weight: 700;
     color: white;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .form .left h2 {
+    text-align: center;
     font-size: 37px;
     font-weight: 500;
     color: #d6222d;
@@ -61,7 +63,7 @@
 }
 
 .form form {
-    width: 100%;
+    width: 47%;
     position: relative;
     margin-bottom: 100px;
 }
@@ -119,11 +121,6 @@
 
 .form form .wrap .dropdown {
     color: #7d7f83;
-}
-
-.form form .wrap .dropdown h1 {
-    color: #7d7f83;
-    font-weight: 500;
 }
 
 .form form .wrap .dropdown-box {
@@ -273,4 +270,145 @@
 
 .form form textarea:hover {
     border: 2px solid #7d7f83;
+}
+
+.popup{
+    display: none;
+}
+
+
+.popUpmessage{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    width: 61%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    z-index: 8;
+    padding: 85px;
+    text-align: center !;
+
+}
+
+.popUpmessage img:first-child{
+    position: absolute;
+    right: 27px;
+    top: 27px;
+
+}
+
+
+.popUpmessage img:hover{
+    cursor: pointer;
+}
+
+.popUpmessage img:nth-child(2){
+    margin-bottom: 45px;
+}
+
+.popUpmessage h2{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.popUpmessage p{
+    text-align: center;
+}
+
+
+.bg{
+    position: fixed;
+    width: 100%;
+    height: 100%; 
+    left: 0;
+    top: 0;    
+    background-color: black;
+    opacity: 50%;
+    z-index: 7;
+}
+
+@media screen and (max-width: 1235px) {
+    .form .left{
+        width: 40%;
+    }
+
+    .title h2{
+        font-size: 28px;
+    } 
+
+    .title p{
+        font-size: 16px;
+    }
+
+    .form form{
+        width: 54%;
+    }
+    .form .left h1{
+        font-size: 48px;
+    }
+    .form .left h2{
+        font-size: 28px;
+    }
+
+    .popUpmessage{
+        padding: 64px;
+    }
+
+    .popUpmessage h2{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 940px){
+    .form .left{
+        display: none;
+    }
+    
+    .form form{
+        width: 100%;
+    }
+
+    .title{
+        padding: 40px 80px;
+    }
+    .form{
+        padding: 0 80px;
+    }
+
+    .title h2{
+        margin:0 0 20px;
+    }
+
+    .popUpmessage{
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 764px){
+    .title{
+        padding: 20px 40px;
+    }
+
+    .form{
+        padding: 0 40px;
+    }
+
+    .popUpmessage{
+        padding: 20px;
+    }
+
+    .popUpmessage h2{
+        font-size: 18px;
+    }
+    .popUpmessage p{
+        font-size: 14px;
+    }
+    .popUpmessage img:nth-child(2){
+        width: auto;
+        height: 80px;
+    }
 }

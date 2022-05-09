@@ -28,7 +28,7 @@
 .get-in-touch p {
 	max-width: 70%;
 	color: white;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.45em;
 }
@@ -45,7 +45,6 @@
 }
 
 .send-us-message {
-	height: 830px;
 	position: relative;
 	background-color: #13151e;
 	display: flex;
@@ -73,7 +72,7 @@
 	right: 0;
 }
 
-.send-us-message .right {
+.send-us-message .right{
 	width: 50%;
 }
 
@@ -81,6 +80,7 @@
 	color: white;
 	font-weight: 500;
 	font-size: 37.5px;
+    margin-bottom: 60px;
 }
 
 .send-us-message .right h1::after {
@@ -88,45 +88,251 @@
 	content: " Message";
 }
 
-input {
-	width: 100%;
-	background-color: transparent;
-	border-radius: 10px;
-	border: solid #d6c2bf 4px;
-	height: 60px;
-	padding: 16px;
-	color: #d6c2bf;
+.right form {
+    width: 100%;
+    position: relative;
+    margin-bottom: 100px;
 }
 
-::placeholder {
-	color: #d6c2bf;
-	opacity: 80%;
-	font-family: "Ubuntu", sans-serif;
+.right form .wrap {
+    margin-bottom: 60px;
 }
 
-label {
-	color: #d6c2bf;
+.right form .wrap .label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #7d7f83;
+    margin: 0 0 8px 13px;
 }
 
-.send-us-message .right {
-	position: relative;
+.right form .wrap .error {
+    color: #d5222c;
+    font-size: 16px;
+    line-height: 145%;
+    display: none;
 }
 
-.send-us-message .right div {
-	color: #d6c2bf;
-	font-size: 18px;
-	line-height: 32px;
+.right form .wrap .input-box,
+.dropdown,
+.dropdown-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    border: 1px solid #7d7f83;
+    border-radius: 10px;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
 }
 
-.send-us-message .right button {
-	position: absolute;
-	right: 0;
-	font-family: "Ubuntu", sans-serif;
-	color: white;
-	background-color: #13151e;
-	transition: 0.5s;
+.right form .wrap .input-box:hover,
+.right form .wrap .dropdown:hover {
+    border: 2px solid #7d7f83;
 }
 
-.send-us-message .right button:hover {
-	background-color: #d6222d;
+.right form .wrap .dropdown:hover{
+    cursor: pointer;
+}
+
+.right form .wrap .input-box:focus {
+    outline: none;
+    border: 2px solid white;
+    color: white;
+}
+
+.right form .wrap .dropdown {
+    color: #7d7f83;
+}
+
+.right form .wrap .dropdown-box {
+    width: 100%;
+    position: absolute;
+    padding: 0;
+    margin-top: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-color: white;
+    opacity: 0;
+    display: none;
+    transform: translateY(-20px);
+    transition: all 0.3s;
+    background-color: #13151e;
+}
+
+.right form .wrap .dropdown-box.active {
+    padding: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-color: white;
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.5s;
+}
+
+.right form .wrap .dropdown-box div {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    border-bottom: solid 1px white;
+}
+
+.right form .wrap .dropdown-box div:first-child {
+    border-radius: 10px 10px 0 0;
+}
+
+.right form .wrap .dropdown-box div:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.right form .wrap .dropdown-box div:hover {
+    background-color: white;
+}
+
+.right form .wrap .dropdown-box div:hover label {
+    color: #13151e;
+}
+
+.right form .wrap .dropdown-box div:last-child {
+    border-bottom: none;
+}
+
+.right form .wrap .dropdown-box div input {
+    display: none;
+    /* outline: none; */
+}
+
+.right form .wrap .dropdown-box div label {
+    color: #7d7f83;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.right form textarea {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    padding: 20px 30px;
+    width: 100%;
+    height: 157px;
+    background-color: #13151e;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #7d7f83;
+}
+
+.right form textarea:hover {
+    border: 2px solid #7d7f83;
+}
+
+.popup{
+    display: none;
+}
+
+
+.popUpmessage{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    width: 61%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    z-index: 8;
+    padding: 85px;
+    text-align: center !;
+
+}
+
+.popUpmessage img:first-child{
+    position: absolute;
+    right: 27px;
+    top: 27px;
+
+}
+
+
+.popUpmessage img:hover{
+    cursor: pointer;
+}
+
+.popUpmessage img:nth-child(2){
+    margin-bottom: 45px;
+}
+
+.popUpmessage h2{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.popUpmessage p{
+    text-align: center;
+}
+
+
+.bg{
+    position: fixed;
+    width: 100%;
+    height: 100%; 
+    left: 0;
+    top: 0;    
+    background-color: black;
+    opacity: 50%;
+    z-index: 7;
+}
+
+@media screen and (max-width: 1235px){
+
+
+    .popUpmessage{
+        padding: 64px;
+    }
+
+    .popUpmessage h2{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 940px){
+
+
+    .popUpmessage{
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 764px){
+
+
+
+    .popUpmessage{
+        padding: 20px;
+    }
+
+    .popUpmessage h2{
+        font-size: 18px;
+    }
+    .popUpmessage p{
+        font-size: 14px;
+    }
+    .popUpmessage img:nth-child(2){
+        width: auto;
+        height: 80px;
+    }
 }

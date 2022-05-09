@@ -90,8 +90,14 @@
     padding: 40px 80px 40px 40px;
 }
 
-.new-course .box img {
+.new-course .box .course-photo {
+    width: 60%;
+    height: auto;
     margin-right: 50px;
+}
+
+.new-course .box .content{
+    position: relative;
 }
 
 .new-course .box .content h1 {
@@ -108,6 +114,7 @@
 .new-course .box .content .wrap {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 60px;
 }
 
@@ -147,7 +154,7 @@
 .galery-member .wrap img {
     width: 500px;
     height: auto;
-    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .alumni-testi {
@@ -207,12 +214,56 @@
     }
 
     .academy .content .text {
-        margin-top: 20px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .new-course .box{
+        flex-direction: column;
+    }
+
+    .new-course .box img:first-child{
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .new-course .box .content div:nth-child(5){
+        width: 90%;
+    }   
+
+    .new-course .box .content div img{
+        margin: 0;
+    }
+
+    .new-course .box .content .wrap {
+        width: 90%;
+    }
+
+    .new-course .box .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .new-course .box .content h1{
+        text-align: center;
+    }
+    .new-course .box .content p{
         width: 90%;
     }
 }
 
+@media screen and (max-width: 940px){
+    .academy{
+        padding: 0 80px;
+    }
+    .new-course,.galery-member,.alumni-testi{
+        padding: 60px 80px;
+    }
+}
+
 @media screen and (max-width: 764px) {
+    
     .academy {
         height: auto;
         padding: 40px 40px 100px 40px;
@@ -225,5 +276,62 @@
     .academy .content img {
         width: 80%;
         height: auto;
+    }
+
+    .academy .content .text .title h1{
+        font-size: 21px;
+    }
+
+    .academy .content .text .paragraph p{
+        font-size: 14px;
+    }
+
+    .new-course{
+        padding: 40px 40px;
+    }
+
+    .new-course .title{
+        font-size: 21px;
+    }
+
+    .new-course .box{
+        margin-top: 20px;
+        padding: 40px;
+    }
+
+    .new-course .box .content p{
+        width: 100%;
+    }
+
+    .new-course .box .content div:nth-child(5){
+        width: 100%;
+    } 
+
+    .new-course .box .content .wrap {
+        width: 100%;
+    }
+
+    .new-course .box .content h1{
+        font-size: 21px;
+        font-weight: 700;
+    }
+
+    .new-course .box .content p{
+        font-size: 14px;
+    }
+
+    .galery-member,.alumni-testi{
+        padding: 40px 40px;
+    }
+
+    .galery-member .title,.alumni-testi .title{
+        margin-bottom: 20px;
+    }
+
+    .galery-member .title,.alumni-testi .title{
+        font-size: 21px;
+    }
+    .alumni-testi .wrap .box {
+        min-width: 350px;
     }
 }
