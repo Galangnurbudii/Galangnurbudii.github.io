@@ -1,5 +1,6 @@
 .kanji-break {
-	height: 160px;
+	width: 100%;
+	padding: 10px 0;
 	background-color: #d6222d;
 	display: flex;
 	justify-content: center;
@@ -11,13 +12,7 @@
 		height: 60%;
 	}
 	.kanji-break img {
-		transform: scale(0.6);
+		width: 90%;
 	}
 }
 
-@media screen and (max-width: 600px) {
-	.kanji-break img {
-		width: 600px;
-		height: auto;
-	}
-}

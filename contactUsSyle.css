@@ -3,89 +3,104 @@
 @import url("footer.css");
 
 .navbar ul li:nth-child(4) {
-	border-bottom: white 2px solid;
+    border-bottom: white 2px solid;
 }
 
 .get-in-touch {
-	padding: 0 112px;
-	height: 860px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #13151e;
+    padding: 100px 112px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #13151e;
+}
+
+.get-in-touch .left {
+    width: 48%;
+    margin-right: 4%;
+}
+
+.get-in-touch .right {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+}
+
+.get-in-touch .right img {
+    width: 100%;
+    height: auto;
 }
 
 .get-in-touch h1 {
-	font-size: 37.5px;
-	color: white;
+    font-size: 37.5px;
+    color: white;
 }
 
 .get-in-touch h1::after {
-	color: #d6222d;
-	content: " Touch";
+    color: #d6222d;
+    content: " Touch";
 }
 
 .get-in-touch p {
-	max-width: 70%;
-	color: white;
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 1.45em;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.45em;
 }
 
 .get-in-touch .contact {
-	display: flex;
-	align-items: center;
-	font-size: 22.5px;
-	color: white;
+    display: flex;
+    align-items: center;
+    font-size: 22.5px;
+    color: white;
 }
 
 .get-in-touch .contact img {
-	margin: 0 35px 0 0;
+    margin: 0 35px 0 0;
 }
 
 .send-us-message {
-	position: relative;
-	background-color: #13151e;
-	display: flex;
-	padding: 75px 112px;
-	align-items: center;
-	justify-content: space-between;
+    width: 100%;
+    position: relative;
+    background-color: #13151e;
+    display: flex;
+    padding: 75px 112px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .send-us-message hr {
-	width: 100%;
-	position: absolute;
-	left: 0;
-	top: 0;
-	background-color: #d6222d;
-	border-color: #d6222d;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #d6222d;
+    border-color: #d6222d;
 }
 
 .send-us-message .left {
-	width: 45%;
-	position: relative;
+    width: 45%;
+    position: relative;
 }
 
 .send-us-message .left img:nth-child(2) {
-	position: absolute;
-	right: 0;
+    position: absolute;
+    right: 0;
 }
 
-.send-us-message .right{
-	width: 50%;
+.send-us-message .right {
+    width: 50%;
 }
 
 .send-us-message .right h1 {
-	color: white;
-	font-weight: 500;
-	font-size: 37.5px;
+    color: white;
+    font-weight: 500;
+    font-size: 37.5px;
     margin-bottom: 60px;
 }
 
 .send-us-message .right h1::after {
-	color: #d6222d;
-	content: " Message";
+    color: #d6222d;
+    content: " Message";
 }
 
 .right form {
@@ -135,7 +150,7 @@
     border: 2px solid #7d7f83;
 }
 
-.right form .wrap .dropdown:hover{
+.right form .wrap .dropdown:hover {
     cursor: pointer;
 }
 
@@ -238,12 +253,11 @@
     border: 2px solid #7d7f83;
 }
 
-.popup{
+.popup {
     display: none;
 }
 
-
-.popUpmessage{
+.popUpmessage {
     display: flex;
     position: fixed;
     flex-direction: column;
@@ -252,86 +266,141 @@
     top: 50%;
     left: 50%;
     width: 61%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-color: white;
     z-index: 8;
     padding: 85px;
     text-align: center !;
-
 }
 
-.popUpmessage img:first-child{
+.popUpmessage img:first-child {
     position: absolute;
     right: 27px;
     top: 27px;
-
 }
 
-
-.popUpmessage img:hover{
+.popUpmessage img:hover {
     cursor: pointer;
 }
 
-.popUpmessage img:nth-child(2){
+.popUpmessage img:nth-child(2) {
     margin-bottom: 45px;
 }
 
-.popUpmessage h2{
+.popUpmessage h2 {
     margin-bottom: 40px;
     text-align: center;
 }
 
-.popUpmessage p{
+.popUpmessage p {
     text-align: center;
 }
 
-
-.bg{
+.bg {
     position: fixed;
     width: 100%;
-    height: 100%; 
+    height: 100%;
     left: 0;
-    top: 0;    
+    top: 0;
     background-color: black;
     opacity: 50%;
     z-index: 7;
 }
 
-@media screen and (max-width: 1235px){
+@media screen and (max-width: 1235px) {
+    .get-in-touch {
+        flex-direction: column;
+    }
 
+    .get-in-touch .right {
+        order: 1;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .get-in-touch .right img {
+        width: 80%;
+    }
 
-    .popUpmessage{
+    .get-in-touch .left {
+        order: 2;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .send-us-message .left {
+        display: none;
+    }
+
+    .send-us-message .right {
+        width: 100%;
+    }
+
+    .popUpmessage {
         padding: 64px;
     }
 
-    .popUpmessage h2{
+    .popUpmessage h2 {
         font-size: 28px;
     }
 }
 
-@media screen and (max-width: 940px){
+@media screen and (max-width: 940px) {
+    .get-in-touch,
+    .send-us-message {
+        padding: 80px;
+    }
 
-
-    .popUpmessage{
+    .popUpmessage {
         padding: 40px;
     }
 }
 
-@media screen and (max-width: 764px){
-
-
-
-    .popUpmessage{
+@media screen and (max-width: 764px) {
+    .get-in-touch,
+    .send-us-message {
         padding: 20px;
     }
 
-    .popUpmessage h2{
-        font-size: 18px;
+    .get-in-touch .right img {
+        width: 100%;
     }
-    .popUpmessage p{
+
+    .send-us-message .right h1,
+    .get-in-touch h1 {
+        font-size: 24px;
+    }
+
+    .send-us-message .right h1 {
+        margin-bottom: 20px;
+    }
+
+    .right form .wrap {
+        margin-bottom: 20px;
+    }
+
+    .get-in-touch p {
         font-size: 14px;
     }
-    .popUpmessage img:nth-child(2){
+
+    .get-in-touch .contact {
+        font-size: 16px;
+    }
+
+    .get-in-touch .contact img {
+        margin-right: 10px;
+    }
+
+    .popUpmessage {
+        padding: 20px;
+    }
+
+    .popUpmessage h2 {
+        font-size: 18px;
+    }
+    .popUpmessage p {
+        font-size: 14px;
+    }
+    .popUpmessage img:nth-child(2) {
         width: auto;
         height: 80px;
     }

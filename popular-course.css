@@ -87,7 +87,7 @@
 @media screen and (max-width: 764px){
     .popular-course {
 		height: auto;
-		padding: 40px 40px 100px 40px;
+		padding: 20px;
 	}
 
 	.popular-course .title h1{
@@ -95,5 +95,25 @@
 	}
 	.popular-course .wrap .content{
 		margin-top: 20px;
+	}
+
+	.popular-course .wrap .content{
+		min-width: 280px;
+		height: auto;
+		margin-bottom: 20px;
+	}
+
+	.popular-course .wrap .content .title{
+		font-size: 18px;
+		line-height: 100%;
+		font-weight: 700;
+	}
+
+	.popular-course .wrap .content .price a{
+		width: 100px;
+	}
+	.popular-course .wrap .content .price h1{
+		font-size: 18px;
+		font-weight: 700;
 	}
 }

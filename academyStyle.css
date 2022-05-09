@@ -9,7 +9,7 @@
 
 .academy {
     position: relative;
-    height: 1022px;
+    padding: 150px 112px;
     display: flex;
     align-items: center;
 }
@@ -98,6 +98,9 @@
 
 .new-course .box .content{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .new-course .box .content h1 {
@@ -106,9 +109,15 @@
     font-weight: 500;
 }
 
+.new-course .box .content h1:first-child{
+    margin-bottom: 40px;
+
+}
+
 .new-course .box .content p {
     font-size: 16px;
     line-height: 145%;
+    margin-bottom: 35px;
 }
 
 .new-course .box .content .wrap {
@@ -159,7 +168,7 @@
 
 .alumni-testi {
     background-color: #13151e;
-    padding: 80px 112px;
+    padding: 80px 112px 100px 112px;
 }
 
 .alumni-testi .title {
@@ -181,6 +190,7 @@
 }
 
 .alumni-testi .wrap .box {
+    position: relative;
     align-items: center;
     min-width: 500px;
     display: flex;
@@ -194,17 +204,9 @@
     margin-right: 36px;
 }
 
-.alumni-testi .wrap .box .content .rating{
-    position: relative;
-    width: 92px;
-    height: 16px;
-}
-
-.alumni-testi .wrap .box .content .rating img{
+.alumni-testi .wrap .box .content img{
     position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+    bottom: 20px;
 }
 
 @media screen and (max-width: 1235px) {
@@ -214,8 +216,13 @@
     }
 
     .academy .content .text {
+        order: 2;
+        margin-top: 40px;
         margin: 0;
-        width: 100%;
+        width: 90%;
+    }
+    .academy .content img{
+        margin-bottom: 40px;
     }
 
     .new-course .box{
@@ -227,8 +234,12 @@
         margin-bottom: 50px;
     }
 
+    .new-course .box .content p{
+        width: 100%;
+    }
+
     .new-course .box .content div:nth-child(5){
-        width: 90%;
+        width: 100%;
     }   
 
     .new-course .box .content div img{
@@ -236,7 +247,7 @@
     }
 
     .new-course .box .content .wrap {
-        width: 90%;
+        width: 100%;
     }
 
     .new-course .box .content{
@@ -255,27 +266,50 @@
 
 @media screen and (max-width: 940px){
     .academy{
-        padding: 0 80px;
+        padding: 60px 80px;
     }
+
+    .academy .bg img{
+        width: 300px;
+    }
+
+    .new-course .box{
+        padding: 20px;
+    }
+
+    .new-course .box img:first-child{
+        margin-bottom: 30px;
+    }
+
+    .new-course .box .content h1{
+        font-size: 28px;
+    }
+
+    .new-course .box .content h1:first-child{
+        margin-bottom: 20px;
+    }
+
+    .academy .content img{
+        width: 60%;
+    }
+
     .new-course,.galery-member,.alumni-testi{
         padding: 60px 80px;
     }
 }
 
 @media screen and (max-width: 764px) {
-    
     .academy {
         height: auto;
-        padding: 40px 40px 100px 40px;
+        padding: 20px;
     }
 
     .academy .bg {
         display: none;
     }
 
-    .academy .content img {
-        width: 80%;
-        height: auto;
+    .academy .content .text{
+        width: 100%;
     }
 
     .academy .content .text .title h1{
@@ -287,7 +321,7 @@
     }
 
     .new-course{
-        padding: 40px 40px;
+        padding: 20px;
     }
 
     .new-course .title{
@@ -296,7 +330,11 @@
 
     .new-course .box{
         margin-top: 20px;
-        padding: 40px;
+        padding: 20px;
+    }
+    
+    .new-course .box img:first-child{
+        margin-bottom: 10px;
     }
 
     .new-course .box .content p{
@@ -312,16 +350,27 @@
     }
 
     .new-course .box .content h1{
-        font-size: 21px;
+        font-size: 18px;
         font-weight: 700;
     }
+    
+    .new-course .box .content h1:first-child{
+        margin-bottom: 10px;
+    }
+
+    .new-course .box .content .wrap .button{
+        width: 100px;
+    }
+
+
 
     .new-course .box .content p{
         font-size: 14px;
+        margin-bottom: 10px;
     }
 
     .galery-member,.alumni-testi{
-        padding: 40px 40px;
+        padding: 20px;
     }
 
     .galery-member .title,.alumni-testi .title{
@@ -331,7 +380,22 @@
     .galery-member .title,.alumni-testi .title{
         font-size: 21px;
     }
-    .alumni-testi .wrap .box {
-        min-width: 350px;
+
+    .galery-member .wrap{
+        padding-bottom: 20px;
+    }
+
+    .galery-member .wrap img{
+        width: 100%;
+    }
+
+    .alumni-testi .wrap .box img{
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .alumni-testi .wrap .box{
+        min-width: 280px;
+        flex-direction: column;
     }
 }

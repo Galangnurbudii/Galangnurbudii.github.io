@@ -39,7 +39,6 @@
 
 .form .left img {
     margin-bottom: 50px;
-
 }
 
 .form .left h1 {
@@ -109,7 +108,7 @@
     border: 2px solid #7d7f83;
 }
 
-.form form .wrap .dropdown:hover{
+.form form .wrap .dropdown:hover {
     cursor: pointer;
 }
 
@@ -272,12 +271,11 @@
     border: 2px solid #7d7f83;
 }
 
-.popup{
+.popup {
     display: none;
 }
 
-
-.popUpmessage{
+.popUpmessage {
     display: flex;
     position: fixed;
     flex-direction: column;
@@ -286,128 +284,124 @@
     top: 50%;
     left: 50%;
     width: 61%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-color: white;
     z-index: 8;
     padding: 85px;
     text-align: center !;
-
 }
 
-.popUpmessage img:first-child{
+.popUpmessage img:first-child {
     position: absolute;
     right: 27px;
     top: 27px;
-
 }
 
-
-.popUpmessage img:hover{
+.popUpmessage img:hover {
     cursor: pointer;
 }
 
-.popUpmessage img:nth-child(2){
+.popUpmessage img:nth-child(2) {
     margin-bottom: 45px;
 }
 
-.popUpmessage h2{
+.popUpmessage h2 {
     margin-bottom: 40px;
     text-align: center;
 }
 
-.popUpmessage p{
+.popUpmessage p {
     text-align: center;
 }
 
-
-.bg{
+.bg {
     position: fixed;
     width: 100%;
-    height: 100%; 
+    height: 100%;
     left: 0;
-    top: 0;    
+    top: 0;
     background-color: black;
     opacity: 50%;
     z-index: 7;
 }
 
 @media screen and (max-width: 1235px) {
-    .form .left{
+    .form .left {
         width: 40%;
     }
 
-    .title h2{
+    .title h2 {
         font-size: 28px;
-    } 
+    }
 
-    .title p{
+    .title p {
         font-size: 16px;
     }
 
-    .form form{
+    .form form {
         width: 54%;
     }
-    .form .left h1{
+    .form .left h1 {
         font-size: 48px;
     }
-    .form .left h2{
+    .form .left h2 {
         font-size: 28px;
     }
 
-    .popUpmessage{
+    .popUpmessage {
         padding: 64px;
     }
 
-    .popUpmessage h2{
+    .popUpmessage h2 {
         font-size: 28px;
     }
 }
 
-@media screen and (max-width: 940px){
-    .form .left{
+@media screen and (max-width: 940px) {
+    .form .left {
         display: none;
     }
-    
-    .form form{
+
+    .form form {
         width: 100%;
     }
 
-    .title{
+    .title {
         padding: 40px 80px;
     }
-    .form{
+    .form {
         padding: 0 80px;
     }
 
-    .title h2{
-        margin:0 0 20px;
+    .title h2 {
+        margin: 0 0 20px;
     }
 
-    .popUpmessage{
+    .popUpmessage {
         padding: 40px;
     }
 }
 
-@media screen and (max-width: 764px){
-    .title{
-        padding: 20px 40px;
-    }
-
-    .form{
-        padding: 0 40px;
-    }
-
-    .popUpmessage{
+@media screen and (max-width: 764px) {
+    .title {
         padding: 20px;
     }
 
-    .popUpmessage h2{
+    .form {
+        padding: 20px;
+    }
+
+    .popUpmessage {
+        padding: 20px;
+    }
+
+    .popUpmessage h2 {
         font-size: 18px;
     }
-    .popUpmessage p{
+    .popUpmessage p {
         font-size: 14px;
     }
-    .popUpmessage img:nth-child(2){
+    .popUpmessage img:nth-child(2) {
         width: auto;
         height: 80px;
     }
