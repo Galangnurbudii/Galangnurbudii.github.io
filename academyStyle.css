@@ -3,8 +3,8 @@
 @import url("footer.css");
 @import url("popular-course.css");
 
-.navbar ul li:nth-child(2){
-	border-bottom: white 2px solid;
+.navbar ul li:nth-child(2) {
+    border-bottom: white 2px solid;
 }
 
 .academy {
@@ -96,7 +96,7 @@
     margin-right: 50px;
 }
 
-.new-course .box .content{
+.new-course .box .content {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -109,9 +109,8 @@
     font-weight: 500;
 }
 
-.new-course .box .content h1:first-child{
+.new-course .box .content h1:first-child {
     margin-bottom: 40px;
-
 }
 
 .new-course .box .content p {
@@ -197,16 +196,16 @@
     padding: 54px 30px;
     border-radius: 10px;
     background-color: #fff;
-    margin-right: 32px;    
+    margin-right: 32px;
 }
 
-.alumni-testi .wrap .box img{
+.alumni-testi .wrap .box img {
     margin-right: 36px;
 }
 
-.alumni-testi .wrap .box .content img{
+.alumni-testi .wrap .box .content img {
     position: absolute;
-    bottom: 20px;
+    bottom: 20%;
 }
 
 @media screen and (max-width: 1235px) {
@@ -221,28 +220,28 @@
         margin: 0;
         width: 90%;
     }
-    .academy .content img{
+    .academy .content img {
         margin-bottom: 40px;
     }
 
-    .new-course .box{
+    .new-course .box {
         flex-direction: column;
     }
 
-    .new-course .box img:first-child{
+    .new-course .box img:first-child {
         margin-right: 0;
         margin-bottom: 50px;
     }
 
-    .new-course .box .content p{
+    .new-course .box .content p {
         width: 100%;
     }
 
-    .new-course .box .content div:nth-child(5){
+    .new-course .box .content div:nth-child(5) {
         width: 100%;
-    }   
+    }
 
-    .new-course .box .content div img{
+    .new-course .box .content div img {
         margin: 0;
     }
 
@@ -250,50 +249,52 @@
         width: 100%;
     }
 
-    .new-course .box .content{
+    .new-course .box .content {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .new-course .box .content h1{
+    .new-course .box .content h1 {
         text-align: center;
     }
-    .new-course .box .content p{
+    .new-course .box .content p {
         width: 90%;
     }
 }
 
-@media screen and (max-width: 940px){
-    .academy{
+@media screen and (max-width: 940px) {
+    .academy {
         padding: 60px 80px;
     }
 
-    .academy .bg img{
+    .academy .bg img {
         width: 300px;
     }
 
-    .new-course .box{
+    .new-course .box {
         padding: 20px;
     }
 
-    .new-course .box img:first-child{
+    .new-course .box img:first-child {
         margin-bottom: 30px;
     }
 
-    .new-course .box .content h1{
+    .new-course .box .content h1 {
         font-size: 28px;
     }
 
-    .new-course .box .content h1:first-child{
+    .new-course .box .content h1:first-child {
         margin-bottom: 20px;
     }
 
-    .academy .content img{
+    .academy .content img {
         width: 60%;
     }
 
-    .new-course,.galery-member,.alumni-testi{
+    .new-course,
+    .galery-member,
+    .alumni-testi {
         padding: 60px 80px;
     }
 }
@@ -304,97 +305,102 @@
         padding: 20px;
     }
 
+    .alumni-testi .wrap .box .content img {
+        bottom: 10%;
+    }
+
     .academy .bg {
         display: none;
     }
 
-    .academy .content .text{
+    .academy .content .text {
         width: 100%;
     }
 
-    .academy .content .text .title h1{
+    .academy .content .text .title h1 {
         font-size: 21px;
     }
 
-    .academy .content .text .paragraph p{
+    .academy .content .text .paragraph p {
         font-size: 14px;
     }
 
-    .new-course{
+    .new-course {
         padding: 20px;
     }
 
-    .new-course .title{
+    .new-course .title {
         font-size: 21px;
     }
 
-    .new-course .box{
+    .new-course .box {
         margin-top: 20px;
         padding: 20px;
     }
-    
-    .new-course .box img:first-child{
+
+    .new-course .box img:first-child {
         margin-bottom: 10px;
     }
 
-    .new-course .box .content p{
+    .new-course .box .content p {
         width: 100%;
     }
 
-    .new-course .box .content div:nth-child(5){
+    .new-course .box .content div:nth-child(5) {
         width: 100%;
-    } 
+    }
 
     .new-course .box .content .wrap {
         width: 100%;
     }
 
-    .new-course .box .content h1{
+    .new-course .box .content h1 {
         font-size: 18px;
         font-weight: 700;
     }
-    
-    .new-course .box .content h1:first-child{
+
+    .new-course .box .content h1:first-child {
         margin-bottom: 10px;
     }
 
-    .new-course .box .content .wrap .button{
+    .new-course .box .content .wrap .button {
         width: 100px;
     }
 
-
-
-    .new-course .box .content p{
+    .new-course .box .content p {
         font-size: 14px;
         margin-bottom: 10px;
     }
 
-    .galery-member,.alumni-testi{
+    .galery-member,
+    .alumni-testi {
         padding: 20px;
     }
 
-    .galery-member .title,.alumni-testi .title{
+    .galery-member .title,
+    .alumni-testi .title {
         margin-bottom: 20px;
     }
 
-    .galery-member .title,.alumni-testi .title{
+    .galery-member .title,
+    .alumni-testi .title {
         font-size: 21px;
     }
 
-    .galery-member .wrap{
+    .galery-member .wrap {
         padding-bottom: 20px;
     }
 
-    .galery-member .wrap img{
+    .galery-member .wrap img {
         width: 100%;
     }
 
-    .alumni-testi .wrap .box img{
+    .alumni-testi .wrap .box img {
         margin-bottom: 10px;
         margin-right: 0;
     }
 
-    .alumni-testi .wrap .box{
+    .alumni-testi .wrap .box {
         min-width: 280px;
         flex-direction: column;
     }

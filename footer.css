@@ -107,6 +107,7 @@ footer .logo-sosmed .sosmed .icon a {
     height: 25px;
     text-decoration: none;
 }
+
 @media screen and (max-width: 1235px) {
     footer ul li {
         max-width: 300px;
