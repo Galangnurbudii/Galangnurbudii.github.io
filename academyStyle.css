@@ -61,6 +61,10 @@
     color: #d6222d;
 }
 
+.academy .content .text .paragraph {
+    margin-bottom: 20px;
+}
+
 .academy .content .text .paragraph p {
     line-height: 150%;
 }

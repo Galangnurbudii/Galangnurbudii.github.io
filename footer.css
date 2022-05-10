@@ -144,7 +144,7 @@ footer .logo-sosmed .sosmed .icon a {
         justify-content: center;
     }
 
-    footer .logo-sosmed > img {
+    footer .logo-sosmed > a {
         display: none;
     }
 }
