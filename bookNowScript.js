@@ -140,14 +140,16 @@ phoneNumberInput.addEventListener("focus", () => {
 });
 
 phoneNumber.addEventListener("focusout", () => {
+    if (phoneNumberInput.value.startsWith("08", 0)) {
+        phoneNumberInput.value = "628" + phoneNumberInput.value.substring(2);
+    }
     phoneNumberInput.value = parseFloat(phoneNumberInput.value).toString();
-    // alert(phoneNumberInput.value.length);
     if (
         phoneNumberInput.value.length < 12 ||
         phoneNumberInput.value.length > 14 ||
         !phoneNumberInput.value.startsWith("62", 0)
     ) {
-        isValid["phoneNumber"] = false;
+        isValid["phone"] = false;
         phoneNumberDiv[0].style.color = "red";
         phoneNumberDiv[1].style.display = "inherit";
         phoneNumberInput.style.color = "red";
@@ -156,7 +158,7 @@ phoneNumber.addEventListener("focusout", () => {
         phoneNumberInput.style.borderColor = "#7d7f83";
         phoneNumberDiv[0].style.color = "#7d7f83";
         phoneNumberDiv[1].style.display = "none";
-        isValid["phoneNumber"] = true;
+        isValid["phone"] = true;
     }
 });
 

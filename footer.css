@@ -1,92 +1,149 @@
 footer {
-	padding-bottom: 20px;
-	background-color: #13151e;
-	position: relative;
+    padding-bottom: 20px;
+    background-color: #13151e;
+    position: relative;
+    padding: 80px 112px;
+    width: 100%;
 }
 
 footer hr {
-	border: #d6222d solid 1px;
-	background-color: #d6222d;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    border: #d6222d solid 1px;
+    background-color: #d6222d;
 }
 
 footer ul {
-	list-style: none;
-	padding: 0 112px;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
 footer ul li {
-	margin: 30px auto;
-	padding: 0 30px;
-	max-width: 400px;
-	height: auto;
+    max-width: 400px;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 footer ul .content h2 {
-	font-size: 18px;
-	font-weight: 500;
-	color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+footer ul .content div {
+    margin-bottom: 20px;
 }
 
 footer ul .content a {
-	text-decoration: none;
-	color: #fff;
-	font-size: 16px;
-	font-weight: 300;
-	transition: 0.5s;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    transition: 0.5s;
 }
 
 footer ul .content a:hover {
-	border-bottom: solid white 1px;
-	transition: 0.5s;
+    border-bottom: solid white 1px;
+    transition: 0.5s;
 }
 
 footer ul .content p {
-	color: #fff;
-	font-size: 14px;
-	font-weight: 300;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .back-to-top {
-	position: absolute;
-	top: 200px;
-	right: 25px;
-	display: flex;
-	align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    display: flex;
+    align-items: center;
 }
 
 .back-to-top button {
-	width: 40px;
-	height: 40px;
-	border-radius: 10px;
-	transition: 0.5s;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .back-to-top button:hover {
-	cursor: pointer;
-	transform: scale(1.1);
-	transition: 0.5s;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 footer .logo-sosmed {
-	padding: 0 112px;
-	display: flex;
-	justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer .logo-sosmed .sosmed {
-	color: #fff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-footer .logo-sosmed .sosmed .icon img {
-	margin: 10px;
-	height: 25px;
+
+footer .logo-sosmed .sosmed p {
+    margin-bottom: 10px;
+}
+footer .logo-sosmed .sosmed .icon a {
+    margin: 10px;
+    height: 25px;
+    text-decoration: none;
+}
+@media screen and (max-width: 1235px) {
+    footer ul li {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    footer {
+        padding: 60px 80px;
+    }
+    footer ul li:last-child {
+        max-width: 100%;
+        /* display: none; */
+    }
+}
+
+@media screen and (max-width: 764px) {
+    footer {
+        padding: 20px;
+    }
+
+    footer ul {
+        padding-right: 60px;
+    }
+
+    footer ul .content h2 {
+        margin-bottom: 10px;
+    }
+    footer ul li {
+        max-width: 100%;
+    }
+
+    footer .logo-sosmed {
+        justify-content: center;
+    }
+
+    footer .logo-sosmed > img {
+        display: none;
+    }
 }

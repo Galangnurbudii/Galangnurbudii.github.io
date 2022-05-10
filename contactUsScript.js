@@ -83,6 +83,9 @@ phoneNumberInput.addEventListener("focus", () => {
 });
 
 phoneNumber.addEventListener("focusout", () => {
+    if (phoneNumberInput.value.startsWith("08", 0)) {
+        phoneNumberInput.value = "628" + phoneNumberInput.value.substring(2);
+    }
     phoneNumberInput.value = parseFloat(phoneNumberInput.value).toString();
     if (
         phoneNumberInput.value.length < 12 ||
