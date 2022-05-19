@@ -37,7 +37,6 @@ listId.forEach((id) => {
     });
 
     dataList.forEach((data) => {
-        // console.log(data.getElementsByTagName("label"));
         data.addEventListener("click", () => {
             validateDropdown(id, dropdown, elemntDiv);
             dropdownBox.className = "dropdown-box";
@@ -149,7 +148,7 @@ phoneNumber.addEventListener("focusout", () => {
         phoneNumberInput.value.length > 14 ||
         !phoneNumberInput.value.startsWith("62", 0)
     ) {
-        isValid["phone"] = false;
+        isValid["phoneNumber"] = false;
         phoneNumberDiv[0].style.color = "red";
         phoneNumberDiv[1].style.display = "inherit";
         phoneNumberInput.style.color = "red";
@@ -158,7 +157,7 @@ phoneNumber.addEventListener("focusout", () => {
         phoneNumberInput.style.borderColor = "#7d7f83";
         phoneNumberDiv[0].style.color = "#7d7f83";
         phoneNumberDiv[1].style.display = "none";
-        isValid["phone"] = true;
+        isValid["phoneNumber"] = true;
     }
 });
 
@@ -193,6 +192,7 @@ const submitButton = document.getElementById("submit");
 window.addEventListener("click", () => {
     if (Object.values(isValid).includes(false)) {
         submitButton.className = "disabled";
+        console.log(isValid);
         submitButton.disabled = true;
     } else {
         submitButton.className = "button";

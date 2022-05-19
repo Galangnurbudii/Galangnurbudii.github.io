@@ -1,18 +1,17 @@
 .kanji-break {
-	width: 100%;
-	padding: 10px 0;
-	background-color: #d6222d;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #d6222d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 1235px) {
-	.kanji-break {
-		height: 60%;
-	}
-	.kanji-break img {
-		width: 90%;
-	}
+    .kanji-break {
+        height: 60%;
+    }
+    .kanji-break img {
+        width: 90%;
+    }
 }
-
