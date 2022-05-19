@@ -21,7 +21,6 @@
     font-size: 18px;
     color: white;
     font-weight: 700;
-    /* margin-bottom: 100px; */
 }
 
 .form {
@@ -186,7 +185,6 @@
 
 .form form .wrap .dropdown-box div input {
     display: none;
-    /* outline: none; */
 }
 
 .form form .wrap .dropdown-box div label {

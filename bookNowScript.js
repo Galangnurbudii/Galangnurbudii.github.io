@@ -35,7 +35,6 @@ listId.forEach((id) => {
             elemntDiv[2].style.display = "inherit";
         }
     });
-
     dataList.forEach((data) => {
         data.addEventListener("click", () => {
             validateDropdown(id, dropdown, elemntDiv);
@@ -172,7 +171,6 @@ dateInput.addEventListener("focus", () => {
 
 dateInput.addEventListener("focusout", () => {
     let dateFormat = new Date(dateInput.value);
-    // alert();
     if (isNaN(dateFormat) || dateFormat < new Date()) {
         isValid["date"] = false;
         dateInput.style.borderColor = "red";

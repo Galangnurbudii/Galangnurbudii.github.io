@@ -29,7 +29,6 @@
 
 .academy .content {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -224,6 +223,7 @@
         margin: 0;
         width: 90%;
     }
+
     .academy .content img {
         margin-bottom: 40px;
     }
@@ -262,6 +262,7 @@
     .new-course .box .content h1 {
         text-align: center;
     }
+
     .new-course .box .content p {
         width: 90%;
     }

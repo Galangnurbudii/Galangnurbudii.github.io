@@ -1,122 +1,117 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-size: 16px;
-	scroll-behavior: smooth;
-	text-align: justify;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    text-align: justify;
 }
 
-
-
 section {
-	padding: 0 112px;
+    padding: 0 112px;
 }
 
 img {
-	height: auto;
+    height: auto;
 }
 
 body {
-	width: 100%;
-	font-family: "Ubuntu", sans-serif;
+    width: 100%;
+    font-family: "Ubuntu", sans-serif;
 }
 
-h1{
-	font-weight: 700;
-	font-size: 67px;
-	line-height: 90%;
+h1 {
+    font-weight: 700;
+    font-size: 67px;
+    line-height: 90%;
 }
 
-h2{
-	font-size: 37px;
-	line-height: 100%;
-	font-weight: 500;
+h2 {
+    font-size: 37px;
+    line-height: 100%;
+    font-weight: 500;
 }
 
-h3{
-	font-size: 28px;
-	line-height: 120%;
-	font-weight: 500;
+h3 {
+    font-size: 28px;
+    line-height: 120%;
+    font-weight: 500;
 }
 
-p{
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 145%;
+p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 145%;
 }
 
 .wrap::-webkit-scrollbar {
-	width: auto;
+    width: auto;
 }
 
 .wrap::-webkit-scrollbar-track {
-	background-color: #fff;
-	border-radius: 10px;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 .wrap::-webkit-scrollbar-thumb {
-	background-color: #d6222d;
-	border-radius: 10px;
+    background-color: #d6222d;
+    border-radius: 10px;
 }
 
 .button {
-	border: none;
-	font-family: "Ubuntu",sans-serif;
-	color: white;
-	background-color: #d6222d;
-	font-size: 16px;
-	font-weight: 500;
-	border-radius: 10px;
-	height: 42px;
-	width: 152px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-decoration: none;
-	transition: 0.5s;
+    border: none;
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    background-color: #d6222d;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    height: 42px;
+    width: 152px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.5s;
 }
 
-.disabled{
-	width: 152px;
-	height: 42px;
-	font-family: "Ubuntu",sans-serif;
-	color: #B0B1B4;
-	background-color: #D0D0D2;
-	border-radius: 10px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.disabled {
+    width: 152px;
+    height: 42px;
+    font-family: "Ubuntu", sans-serif;
+    color: #b0b1b4;
+    background-color: #d0d0d2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-
-
 
 .button:hover {
-	cursor: pointer;
-	height: 46px;
-	width: 155px;
-	font-size: 18px;
-	background-color: #A01019;
-	transition: 0.5s;
+    cursor: pointer;
+    height: 46px;
+    width: 155px;
+    font-size: 18px;
+    background-color: #a01019;
+    transition: 0.5s;
 }
 
-.button-course{
-	color: white;
-	border-radius: 10px;
-	background-color: #d6222d;
-	height: 38px;
-	width: 138px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-decoration: none;
-	font-size: 16px;
-	font-weight: 500;
-	transition: 0.5s;
+.button-course {
+    color: white;
+    border-radius: 10px;
+    background-color: #d6222d;
+    height: 38px;
+    width: 138px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s;
 }
 
-.button-course:hover{
-	background-color: #A01019;
-	transition: 0.5s;
+.button-course:hover {
+    background-color: #a01019;
+    transition: 0.5s;
 }

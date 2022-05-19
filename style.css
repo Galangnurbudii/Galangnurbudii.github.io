@@ -314,8 +314,6 @@
     border-radius: 10px;
     margin-right: 25px;
     margin-bottom: 60px;
-    /* display: flex;
-	justify-content: center; */
 }
 
 .popular-menu .wrap .box img {
@@ -588,7 +586,6 @@
     }
     .our-food .description .judul h1 {
         font-size: 21px;
-        /* margin-top: 20px; */
     }
 
     .popular-menu {
